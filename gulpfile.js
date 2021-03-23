@@ -67,7 +67,7 @@ function scripts() {
     .pipe(babel({
       presets: ['env']
     }))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(concat('script.min.js'))
     .pipe(gulp.dest(paths.build + 'js/'))
 }
@@ -79,11 +79,7 @@ function copyFonts() {
 }
 
 function scriptsVendors() {
-  return gulp.src([
-      'node_modules/jquery/dist/jquery.min.js',
-      'node_modules/slick-carousel/slick/slick.min.js',
-      'node_modules/svg4everybody/dist/svg4everybody.min.js'
-    ])
+  return gulp.src(paths.src + 'js/vendors/*.js')
     .pipe(concat('vendors.min.js'))
     .pipe(gulp.dest(paths.build + 'js/'))
 }
@@ -134,11 +130,11 @@ exports.watch = watch;
 
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images)
+  gulp.parallel(styles, scripts, scriptsVendors, htmls, copyFonts, images)
 ));
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images),
+  gulp.parallel(styles, scripts, scriptsVendors, htmls, copyFonts, images),
   gulp.parallel(watch, serve)
 ));
