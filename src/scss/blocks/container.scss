@@ -3,10 +3,23 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-@media (min-width: $tablet-width) {
-  .container{
-    width: 768px;
-  }
+.test-content{
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
-@media (min-width: $desctop-width) {
+
+@media only screen and (min-width: 769px){
+  .container{
+    width: 100%;
+    max-width: 1500px;
+  }
+  .container--header{
+    margin: 0 auto;
+    display: flex;
+		padding: 0px 30px;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 70px;
+  }
 }

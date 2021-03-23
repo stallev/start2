@@ -4,75 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">  
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Bootstrap</title>
+  <link rel="shortcut icon" href="../img/decor/favicon.png" type="image/png" />
+  <title>Start template</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container container--header">
-      <div class="header__upper">
-        <div class="header__logo-toggle">
-            <div class="logo logo--header">
-              <picture class="logo__image logo__image--header">
-                <source media="(min-width: 768px)" srcset="img/decor/logo-tablet.png">
-                <source media="(min-width: 1360px)" srcset="img/decor/logo-desktop.png">
-                <img src="img/decor/logo.png" alt="logo">
-              </picture>
-            </div>
-            <div class="header__toggle">
-              <button class="header__toggle-button header__toggle-button--cross"></button>
-              <button class="header__toggle-button header__toggle-button--hamburger"></button>
-            </div>
-
+  <div class="wrapper">
+    <header class="header">
+      <div class="container container--header">
+        <span class="header__menu-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">
+          <img src="../img/decor/logo.png" alt="logotype">
+        </a>
+        <div class="header__nav-wrap">
+          <div class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">link0</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">link1</a>
+                <ul class="header__nav-sub1-list">
+                  <li class="header__nav-sub1-item">
+                    <a href="#" class="header__nav-link header__nav-link--sub-nav">sub item link</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">link3</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">link4</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">link5</a>
+              </li>
+            </ul>
           </div>
-        <nav class="nav nav--header">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">главная</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">преимущества</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">портфолио</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">наши услуги</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">отзывы</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__bottom">
-        <div class="page-title">
-            <h1 class="page-title__title">
-              Дизайн интерьеров
-            </h1>
-            <p class="page-title__description">
-              Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.
-            </p>
+        </div>
+        <div class="header__srch-wdg">
+          <span class="header__srch-icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <div class="header__srch-wdg-inner">
+            <form action="#" class="header__srch-form">
+              <input type="text" placeholder="Поиск..." class="header__srch-input">
+              <button class="header__srch-btn" type="submit"></button>
+            </form>
           </div>
-          <a href="#" class="header__bottom-menu-link">
-            ЗАКАЗАТЬ ДИЗАЙН
-          </a>
+        </div>
+        <div class="header__personal-wdg">
+          <a href="#" class="header__account-link">login</a>
+          <div class="cart">
+            <a href="#" class="cart__header">
+              <span class="cart__name">my cart</span>
+              <span class="cart__price">850 р</span>
+              <span class="cart__total-count">2</span>
+            </a>
+            <div class="cart__content">
+              <div class="cart__content-header">
+                <span class="cart__total-header-counts">2 товара</span>
+                <a href="cart.html" class="cart__total-header-counts">корзина</a>
+              </div>
+              <div class="cart__items-list">
+                <div class="cart__item">
+                  <div class="cart__item-descr">
+                    <h5 class="cart__item-name">Solid Pattern In Fashion Summer Dress</h5>
+                    <div class="cart__item-price-block">
+                      <span class="cart__item-count">1</span>
+                      <span class="cart__item-price">320 р</span>
+                    </div>
+                    <figure>
+                      <img src="../img/decor" alt="item" class="cart__item-image">
+                      <button class="cart__item-drop"></button>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main class="main">
-  </main>
-  <footer class="footer">
-    <div class="container container--footer">
-      <div class="footer__content">
-        <div class="logo logo--footer">
-          <img src="../img/decor/logo-footer.png" alt="logo" class="logo__image logo__image--footer">
-        </div>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link footer__social-link--vk"></a>
-          <a href="#" class="footer__social-link footer__social-link--instagram"></a>
-          <a href="#" class="footer__social-link footer__social-link--facebook"></a>
-        </div>
-        <div class="footer__info">
-          <p class="footer__copyright">BRUME interior, 2017 &nbsp; &copy;</p>
-          <p class="footer__author-design">HolodnayaDesign</p>
-        </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <p class="test-content">
+          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое, залетают грамматики собрал наш продолжил страна взгляд несколько, переписали щеке заглавных даже силуэт встретил первую инициал свой то запятых, по всей однажды своего пор рекламных себя ее. Послушавшись решила обеспечивает не ему океана от всех приставка необходимыми точках вопроса мир на берегу, большой жизни рыбными живет переписали скатился агентство дорогу текстами. Снова рыбного от всех, возвращайся гор грамматики если за имеет но ручеек сбить которой своих над которое вопроса бросил большого дал океана осталось маленькая встретил. Дорогу, оксмокс снова подзаголовок курсивных жизни раз языком, мир безорфографичный там свое океана грустный повстречался единственное. Курсивных коварных путь не страну живет послушавшись, свое запятых они, всеми от всех, одна подпоясал обеспечивает. Ты запятой злых правилами путь великий выйти знаках, имени, возвращайся, ему продолжил лучше безорфографичный ipsum. Алфавит пояс если вопроса? Собрал бросил города продолжил всеми агентство переписывается, всемогущая моей рукопись жаренные переписали ipsum которое свой первую единственное злых дороге речью сих. Имени что меня вдали первую маленький города языком. По всей пор коварных свой рот, рыбного ручеек он решила вершину диких буквоград грустный бросил повстречался одна своего. Страну, страна запятой. Путь вскоре за но моей не всемогущая образ знаках коварных пор снова. Большой.
+        </p>
       </div>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </main>
+    <footer class="footer">
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="js/vendors.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
