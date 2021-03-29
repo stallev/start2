@@ -1,0 +1,112 @@
+.promo-block{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    padding: 45px 30px;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    &--2{
+      border: 30px solid #26b;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      & .promo-block__item-title{
+        font-size: 3rem;
+      }
+      & .promo-block__item-descr{
+        font-size: 1.8rem;
+        color: rgb(58, 53, 53);
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      & .promo-block__item-link{
+        padding: 15px 15px;
+        background-color: #000;
+      }
+    }
+  }
+  &__item-title{
+    padding: 15px 0 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__item-descr{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    &::after{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 40px;
+      height: 4px;
+      background-color: #000;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+  &__item-link{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include colorOnHover;
+  }
+}
+@media only screen and (min-width: 576px){
+  .promo-block{
+    &__item{
+      &--1{
+        width: 48%;
+        order: 1;
+      }
+      &--2{
+        padding: 16px 30px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        order: 3;
+      }
+      &--3{
+        width: 48%;
+        order: 2;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 993px){
+  .promo-block{
+    &__list{
+      
+    }
+    &__item{
+      &--1{
+        width: 32%;
+        order: 1;
+      }
+      &--2{
+        padding: 0 30px;
+        border-width: 25px;
+        width: 32%;
+        order: 2;
+        & .promo-block__item-title{
+          font-size: 2.5rem;
+        }
+      }
+      &--3{
+        width: 32%;
+        order: 3;
+      }
+    }
+  }
+}

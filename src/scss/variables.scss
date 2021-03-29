@@ -2,6 +2,7 @@ $body-color: #fff;
 $content-color: #838383;
 $content-ff: "Open Sans";
 $section-title-color: #00203a;
+$brd-c: #edeef0;
 $tablet-width: 768px;
 $desctop-width: 1360px;
 $font-size: 10px;
@@ -25,3 +26,5 @@ $lh-slg60: 6rem;
 $lh-slg70: 7rem;
 
 $tablet-side-padding: 40px;
+$toast-breakpoint-medium: 992px !default;
+$toast-breakpoint-small: 480px !default;

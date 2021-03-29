@@ -1,6 +1,6 @@
 .container{
-  width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
   box-sizing: border-box;
 }
 .test-content{
@@ -8,18 +8,24 @@
   font-size: 1.5rem;
   line-height: 1.2;
 }
+.container--header{
+  position: relative;
+  display: flex;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 993px){
   .container{
     width: 100%;
     max-width: 1500px;
   }
   .container--header{
-    margin: 0 auto;
-    display: flex;
 		padding: 0px 30px;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: flex-start;
 		min-height: 70px;
   }
 }

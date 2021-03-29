@@ -1,0 +1,86 @@
+.action{
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+  width: 100%;
+  line-height: 1.42;
+  text-decoration: none;
+  text-align: center;
+  white-space: normal;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 9px 17px;
+  overflow: hidden;
+  margin: 0;
+  min-width: 90px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  user-select: none;
+  border-radius: 5px;
+  color: #fff;
+  background: #111;
+  transition: background 0.2s ease 0s;
+  &--cart{
+    display: block;
+    margin: 0 auto;
+    margin: 12px auto;
+  }
+  &--promoslide{
+    width: fit-content;
+  }
+}
+.collections__item:hover .action--collections{
+  background-color: #000;
+}
+.action::after{
+  position: absolute;
+  content: "";
+  display: none;
+  width: 55%;
+  height: 100%;
+  margin-left: 60px;
+  background: #fff;
+  position: absolute;
+  right: 150%;
+  top: 0;
+  opacity: .2;
+  z-index: 20;
+  transform: skewX(-30deg);
+  transition: all 0.1s;
+  animation-name: slideme;
+  animation-duration: .3s;
+  animation-delay: 0.05s;
+  animation-timing-function: ease-in-out;
+}
+.action.product-item__buy-now{
+  width: 100%;
+}
+.action:hover::after{
+  display: block;
+}
+@keyframes slideme {
+  0% {
+    right: -1px;
+  }
+  100% {
+    right: 150%;
+  }
+}
+@media only screen and (min-width: 769px){
+  .action{
+    &--center-redirect-left{
+      width: fit-content;
+      padding: 9px 17px 9px 35px;
+      margin: 60px auto;
+    }
+    &--discounts{
+      letter-spacing: 1.3px;
+    }
+  }
+  .action--discounts:nth-of-type(1){
+    margin-right: 20px;
+  }
+}

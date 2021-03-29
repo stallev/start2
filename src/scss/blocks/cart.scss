@@ -1,0 +1,109 @@
+.cart{
+  position: absolute;
+  top: 64px;
+  left: -67px;
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px 7px #B7B7B7;
+  &::before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -13px;
+    right: 22px;
+    border-style: solid;
+    border-width: 0 10px 12px 10px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+  &__content-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $brd-c;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222529;
+  }
+  &__item-list{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $brd-c;
+  }
+  &__item{
+    display: flex;
+  }
+  &__item-descr{
+    flex: 1;
+  }
+  &__item figure{
+    box-sizing: border-box;
+    width: fit-content;
+    margin: 3px;
+    width: 70px;
+  }
+  &__item figure img{
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+  }
+  &__item-name{
+    padding-top: 5px;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    color: #664;
+    font-weight: 400;
+  }
+  &__item-price-block{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+  }
+  &__item-count{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #999;
+    margin-right: 7px;
+  }
+  &__item-price-block i{
+    display: inline-block;
+    margin-right: 7px;
+  }
+  &__item-price{
+    font-size: 1.4rem;
+    color: #d26e4b;
+    font-weight: 700;
+  }
+  &__total{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid $brd-c;
+    &-name{
+      display: inline-block;
+      margin-right: 5px;
+      color: #999;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+    &-value{
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #222;
+    }
+  }
+  
+}
+@media only screen and (min-width: 480px){
+  .cart{
+    max-width: 340px;
+  }
+}
