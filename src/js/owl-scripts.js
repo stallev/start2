@@ -39,66 +39,146 @@ $('.advantages__slider-wrap').slick({
 });
 
 //слайдер в секции "Лидеры продаж"
-$('.products-list__inner--bestsellers-slider').slick({
-  slidesToShow: 4,
-  margin: 45,
-  slidesToScroll: 1,               
-  dots: false,
-  arrows:false,
-  infinite: true,
-  dotsClass: 'bestseller-slider__slick-dots',
-  responsive: [
-    {
-      breakpoint: 993,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        dots: true,
+if($('.products-list__inner--bestsellers-slider')){
+  $('.products-list__inner--bestsellers-slider').slick({
+    slidesToShow: 4,
+    margin: 45,
+    slidesToScroll: 1,               
+    dots: false,
+    arrows:false,
+    infinite: true,
+    dotsClass: 'bestseller-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          dots: true,
+        }
       }
-    },
-    {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-      }
-    }
-  ]
-});
+    ]
+  });
+}
+
 //слайдер "Популярные товары"
-$('.products-list__inner--popular-slider').slick({
-  slidesToShow: 4,
-  margin: 45,
-  slidesToScroll: 1,               
-  dots: false,
-  arrows:false,
-  infinite: true,
-  dotsClass: 'bestseller-slider__slick-dots',
-  responsive: [
-    {
-      breakpoint: 993,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        dots: true,
+if($('.products-list__inner--popular-slider')){
+  $('.products-list__inner--popular-slider').slick({
+    slidesToShow: 4,
+    margin: 45,
+    slidesToScroll: 1,               
+    dots: false,
+    arrows:false,
+    infinite: true,
+    dotsClass: 'bestseller-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
       }
-    },
-    {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 2,
+    ]
+  });
+}
+//слайдер "наши клиенты"
+if($('.brands__list')){
+  $('.brands__list').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,               
+    dots: false,
+    arrows:false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    dotsClass: 'bestseller-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          dots: true,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+          infinite: true,
+        }
       }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
+    ]
+  });
+}
+
+//слайдер "наши клиенты"
+if($('.blog-section__content')){
+  $('.blog-section__content').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,               
+    dots: false,
+    arrows:false,
+    infinite: true,
+    dotsClass: 'bestseller-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
       }
-    }
-  ]
-});
+    ]
+  });
+}

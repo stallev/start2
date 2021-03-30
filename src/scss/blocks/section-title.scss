@@ -24,7 +24,9 @@
     text-align: center;
     z-index: 3;
     background-color: #fff;
-    &--categories{
+    color: rgb(34, 34, 34);
+    &--categories,
+    &--blog-section{
       background-color: rgb(246, 247, 249);
     }
   }
