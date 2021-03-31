@@ -113,6 +113,7 @@ if($('.products-list__inner--popular-slider')){
     ]
   });
 }
+
 //слайдер "наши клиенты"
 if($('.brands__list')){
   $('.brands__list').slick({
