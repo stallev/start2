@@ -5,6 +5,10 @@
   &__img-wrap{
     position: relative;
   }
+  &__img{
+    display: block;
+    margin: 0 auto;
+  }
   &__link{
     position: absolute;
     width: 100%;

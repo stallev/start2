@@ -47,10 +47,42 @@ if (isMobile.any()) {
 const iconMenu = document.querySelector('.header__menu-icon-wrap');
 const mobileNavBlock = document.querySelector('.header__nav-block');
 const menuBody = document.querySelector('.nav');
+const closeIcon = document.querySelector('.mobile-nav__icon-close-wrap');
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
-		document.body.classList.toggle('_lock');
-		iconMenu.classList.toggle('_active');
-		mobileNavBlock.classList.toggle('_active');
+		document.body.classList.add('_lock');
 	});
+}
+if (closeIcon) {
+	closeIcon.addEventListener("click", function (e) {
+		document.body.classList.remove('_lock');
+	});
+}
+//показываем и скрываем списки и подменю
+let hiddenItemsControls = document.querySelectorAll('.hidden-items-control');
+if(hiddenItemsControls){
+	hiddenItemsControls.forEach(
+		element => {
+			element.addEventListener('click', function(e){
+				e.preventDefault();
+				e.target.classList.toggle('open-state');
+				let sublist = e.target.closest('.sublist-title').nextSibling.nextElementSibling;
+				console.log(sublist);
+				sublist.classList.toggle('hidden-items');
+			})
+		}
+	)
+}
+
+//изменяем чекбоксы в фильтре
+let chkboxFilterLinks = document.querySelectorAll('.filter__options-list--chkbox .filter__option-link');
+if(chkboxFilterLinks){
+	chkboxFilterLinks.forEach(
+		element => {
+			element.addEventListener('click', function(e){
+				e.preventDefault();
+				e.target.closest('.filter__option-link').classList.toggle('checked-option');
+			})
+		}
+	)
 }

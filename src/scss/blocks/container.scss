@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 0 30px;
   box-sizing: border-box;
+  width: 100%;
 }
 .test-content{
   padding-bottom: 25px;
@@ -25,11 +26,15 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.container--page-header{}
 
 @media only screen and (min-width: 993px){
   .container{
     width: 100%;
-    max-width: 1500px;
+    max-width: 1220px;
+  }
+  .container-fluid{
+    max-width: 1220px;
   }
   .container--header{
 		padding: 0px 30px;

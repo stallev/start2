@@ -1,0 +1,10 @@
+.page-header{
+  padding: 160px 0 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 769px){
+  .page-header{
+    padding: 90px 0;
+  }
+}

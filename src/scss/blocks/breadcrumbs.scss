@@ -1,0 +1,11 @@
+.breadcrumbs{
+  width: fit-content;
+  &--page-title-catalog{
+    margin: 0 auto;
+    color: #fff;
+  }
+  &__list{
+    display: flex;
+    align-items: baseline;
+  }
+}

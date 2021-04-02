@@ -1,0 +1,146 @@
+.filter{
+  padding: 15px 0;
+  border-top: 3px solid #cdcdcd;
+  &__title{
+    padding: 22px 0 14px 2px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+  }
+  &__option-item{
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+  &__options-list{
+    transition: height .4s ease-in-out;
+  }
+  &__option-link{
+    display: block;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: rgb(102, 102, 102);
+    transition: color .4s ease-in;
+    &:hover{
+      color: #26b;
+    }
+  }
+  &__options-sub1list{
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    border-left: 1px solid rgb(238, 238, 238);
+  }
+  &__option-item--sublist{
+    border-bottom: none;
+  }
+}
+.filter .sublist-title{
+  position: relative;
+}
+.filter {
+  transition: color .4s ease-in;
+  &:hover{
+    color: #26b;
+  }
+}
+.filter .filter__title-open-list{
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 20px;
+  width: 1px;
+  height: 1px;
+  &::before{
+    position: absolute;
+    top: -20px;
+    right: -23px;
+    content: '+';
+    display: block;
+    width: 33px;
+    height: 24px;
+    color: #222;
+    font-size: 3.1rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
+
+.filter .filter__title-open-list.open-state{
+  &::before{
+    content: '-';
+    font-size: 5.9rem;
+    top: -44px;
+    right: -20px;
+  }
+}
+.filter__option-item .filter__option-link .hidden-items-control{
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 15px;
+  width: 1px;
+  height: 1px;
+  &::before{
+    position: absolute;
+    top: -8px;
+    right: -23px;
+    content: '\f107';
+    display: block;
+    width: 33px;
+    height: 24px;
+    color: #222;
+    font-size: 1rem;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
+.filter__option-item .filter__option-link .hidden-items-control.open-state{
+  &::before{
+    content: '\f106';
+    right: -20px;
+  }
+}
+
+//стили для чекбоксов в фильтре
+.filter{
+  &__options-list--chkbox a{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+  &__option-link-chk-count{
+    font-size: 1.4rem;
+    color: #cdcdcd;
+  }
+  &__option-link-chk-name{
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    cursor: pointer;
+    &::before{
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      content: '';
+      width: 15px;
+      height: 15px;
+      border: 1px solid #cdcdcd;
+      border-radius: 1px;
+    }
+  }
+}
+.filter__option-link.checked-option .filter__option-link-chk-name::before{
+  top: 0;
+  right: -23px;
+  content: '\f14a';
+  border: none;
+  width: fit-content;
+  color: #222;
+  font-size: 2rem;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+  cursor: pointer;
+}

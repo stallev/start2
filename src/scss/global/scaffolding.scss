@@ -42,3 +42,7 @@ h1, h2, h3, h4, h5{
 	border: 0;
 	box-sizing: border-box;
 }
+.hidden-items{
+  transition: all .4s ease-in-out;
+  display: none;
+}

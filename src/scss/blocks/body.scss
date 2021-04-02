@@ -6,4 +6,8 @@ body{
 ul{
   padding: 0;
 }
+.wrap{
+  display: flex;
+}
+
 @include respond-to(tabletAndWider){}

@@ -1,43 +1,49 @@
 "use strict"
 let bg__elements = document.querySelectorAll('.bg-src');
-bg__elements.forEach(element => {
-  let bg_img_src = element.getAttribute('data-bg-src');
-  element.style.backgroundImage = 'url(' + bg_img_src + ')';
-});
-//слайдер в шапке на главной странице
-$('.promo-slider__wrap').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,               
-  dots: true,
-  arrows:false,
-  infinite: true,
-  dotsClass: 'promo-slider__slick-dots'
-});
-//мини-слайдер под слайдером в шапке главной страницы
-$('.advantages__slider-wrap').slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,               
-  dots: false,
-  arrows:false,
-  infinite: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
+if(bg__elements){
+  bg__elements.forEach(element => {
+    let bg_img_src = element.getAttribute('data-bg-src');
+    element.style.backgroundImage = 'url(' + bg_img_src + ')';
+  });
+}
 
+//слайдер в шапке на главной странице
+if($('.promo-slider__wrap')){
+  $('.promo-slider__wrap').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,               
+    dots: true,
+    arrows:false,
+    infinite: true,
+    dotsClass: 'promo-slider__slick-dots'
+  });
+}
+//мини-слайдер под слайдером в шапке главной страницы
+if($('.advantages__slider-wrap')){
+  $('.advantages__slider-wrap').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,               
+    dots: false,
+    arrows:false,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+}
 //слайдер в секции "Лидеры продаж"
 if($('.products-list__inner--bestsellers-slider')){
   $('.products-list__inner--bestsellers-slider').slick({
@@ -156,7 +162,7 @@ if($('.brands__list')){
   });
 }
 
-//слайдер "наши клиенты"
+//слайдер "посты блога"
 if($('.blog-section__content')){
   $('.blog-section__content').slick({
     slidesToShow: 2,
@@ -170,6 +176,7 @@ if($('.blog-section__content')){
         breakpoint: 993,
         settings: {
           slidesToShow: 2,
+          dots: true,
         }
       },
       {
@@ -181,5 +188,8 @@ if($('.blog-section__content')){
         }
       }
     ]
-  });
+  })
+  .on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+});
 }

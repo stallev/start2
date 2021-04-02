@@ -48,6 +48,7 @@
 	&__srch-icon{
 		position: relative;
 		font-size: 2.5rem;
+		padding: 13px 20px;
 	}
 	&__srch-wdg{
 		position: relative;
@@ -58,7 +59,7 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity .3s ease-in-out;
-		top: 48px;
+		top: 40px;
     right: -1px;
 		padding: 15px;
 		background-color: #fff;
@@ -113,19 +114,22 @@
 .header__menu-icon-wrap._active{
 	z-index: 16;
 }
-.header__menu-icon-wrap._active .header__menu-icon{
-	width: 0;
-	height: 0;
-	&::after{
-		height: 2px;
-		transform: rotate(45deg);
-	}
-	&::before{
-		height: 2px;
-		top: 9px;
-		transform: rotate(-45deg);
-	}
-}
+// .header__menu-icon-wrap._active .header__menu-icon{
+// 	position: absolute;
+// 	top: 25px;
+// 	right: 25px;
+// 	width: 0;
+// 	height: 0;
+// 	&::after{
+// 		height: 2px;
+// 		transform: rotate(45deg);
+// 	}
+// 	&::before{
+// 		height: 2px;
+// 		top: 9px;
+// 		transform: rotate(-45deg);
+// 	}
+// }
 @media only screen and (min-width: 993px){
 	.header{
 		&__menu-icon-wrap{

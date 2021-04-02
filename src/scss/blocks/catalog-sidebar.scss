@@ -1,0 +1,95 @@
+.catalog-sidebar{
+  transition: margin .4s ease-in;
+}
+// стили для сайдбара на мобильных экранах
+.catalog-sidebar__content{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 290px;
+  padding: 30px 20px;
+  transform: translateX(0);
+  overflow: scroll;
+  background-color: #fff;
+  opacity: 1;
+  visibility: visible;
+  line-height: 1.3;
+  transition: transform .4s,opacity .4s;
+  z-index: 121;
+}
+.catalog-sidebar__overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #222;
+  transition: visibility .4s,opacity .4s;
+  z-index: 120;
+}
+body.sidebar-active .catalog-sidebar__content{
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+body.sidebar-active .catalog-sidebar__overlay{
+  opacity: .8;
+  visibility: visible;
+}
+.closed-left-sidebar{
+  margin-left: -25%;
+  height: 0;
+}
+.closed-left-sidebar+.products-list__wrap--catalog{
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.catalog-sidebar__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  & span{
+    display: block;
+    width: fit-content;
+    color: #26b;
+  }
+}
+.catalog-sidebar__close{
+  position: relative;
+  padding: 10px 25px 10px 10px;
+  border: 2px solid #26b;
+  transition: all .4s ease-in;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  &::before{
+    position: absolute;
+    display: block;
+    content: '\f177';
+    top: 8px;
+    right: -12px;
+    width: 33px;
+    height: 24px;
+    color: #26b;
+    font-size: 1.5rem;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    transition: all .4s ease-in;
+    cursor: pointer;
+  }
+  &:hover{
+    background-color: #26b;
+    color: #fff;
+  }
+}
+.catalog-sidebar__close:hover::before{
+  color: #fff;
+}
+.catalog-sidebar__clear-all{
+  font-size: 1.4rem;
+  cursor: pointer;
+}

@@ -80,21 +80,25 @@
     flex-direction: row;
     justify-content: space-between;
     &__image-wrap{
-      width: calc(50% - 1rem);
+      width: calc(50% - .5rem);
     }
     &__content{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: calc(50% - 1rem);
+      width: calc(50% - .5rem);
       padding-right: 15px;
     }
   }
 }
 @media only screen and (min-width: 769px){
   .blog-item{
+    height: 100%;
     &__excerpt{
       line-height: 1.7;
+    }
+    &__read-more{
+
     }
   }
 }
