@@ -1,5 +1,6 @@
 "use strict"
-
+const screenWidth = document.documentElement.clientWidth;
+let body = document.querySelector('body');
 const isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i);
@@ -74,3 +75,25 @@ if(hiddenItemsControls){
 	)
 }
 
+//меню футер
+const footerMenu = document.querySelector('.footer__mobile-nav-wrap');
+if(footerMenu&&(screenWidth<769)){
+	let scrollPos = 0;
+	$(window).scroll(function(){
+		var st = $(this).scrollTop();
+		if (st > scrollPos){
+			//$('#result').html('Вниз');
+			console.log('st');
+			body.classList.add('show-footer-menu');
+		} else {
+			//$('#result').html('Вверх');
+			console.log('st');
+			//body.classList.remove('show-footer-menu');
+		}
+		scrollPos = st;
+ });
+	// window.addEventListener('scroll', function(){
+	// 	console.log('14585');
+	// 	body.classList.add('show-footer-menu');
+	// })
+}

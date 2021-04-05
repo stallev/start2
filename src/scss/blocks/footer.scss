@@ -70,10 +70,12 @@
     padding-top: 10px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -300px;
+    transition: bottom .3s ease-in-out;
     opacity: 1;
     transform: translateY(0);
     background: #fff;
+    box-shadow:0 0 10px 1px rgba(0,0,0,.1);
     color: rgb(102, 102, 102);
     z-index: 1060;
   }
@@ -86,18 +88,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &--cart{
+      position: relative;
+    }
   }
   &__mobile-nav-link-icon{
     position: relative;
     display: block;
     margin-bottom: 5px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     transition: top .6s ease-in-out;
   }
   &__mobile-nav-text{
     font-size: 1rem;
     text-transform: uppercase;
   }
+}
+.show-footer-menu .footer__mobile-nav-wrap{
+  bottom: 0;
 }
 .footer__mobile-nav-item:hover .footer__mobile-nav-link-icon{
   top: -5px;
