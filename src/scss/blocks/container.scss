@@ -35,6 +35,14 @@
   padding-top: 0;
   padding-bottom: 60px;
 }
+.container--testimonials{
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.container--team{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
 
 @media only screen and (min-width: 993px){
   .container{
@@ -62,5 +70,13 @@
   .container--about{
     padding-top: 60px;
     padding-bottom: 50px;
+  }
+  .container--testimonials{
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+  .container--team{
+    padding-top: 30px;
+    padding-bottom: 60px;
   }
 }

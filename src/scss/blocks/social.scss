@@ -18,6 +18,11 @@
       color: #fff;
       border: none;
     }
+    &--team{
+      font-size: 1.7rem;
+      color: #fff;
+      border: 2px solid #fff;
+    }
     &:hover{
       color: rgb(232, 232, 232);
       background-color: rgb(218, 218, 218);
@@ -29,6 +34,10 @@
   color: #fff;
 }
 .social__link--store:hover{
+  background-color: rgb(73, 138, 218);
+  border-color: rgb(37, 126, 235);
+}
+.social__link--team:hover{
   background-color: rgb(73, 138, 218);
   border-color: rgb(37, 126, 235);
 }

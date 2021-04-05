@@ -204,3 +204,33 @@ if($('.aside-slider__list')){
     infinite: true
   });
 }
+
+//слайдер "Отзывы покупателей"
+if($('.testimonials__list')){
+  $('.testimonials__list').slick({
+    slidesToShow: 3,
+    margin: 45,
+    slidesToScroll: 1,               
+    dots: true,
+    arrows:false,
+    infinite: true,
+    dotsClass: 'bestseller-slider__slick-dots',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
+}
