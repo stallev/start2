@@ -193,3 +193,14 @@ if($('.blog-section__content')){
     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
 });
 }
+
+//слайдер в сайдбаре
+if($('.aside-slider__list')){
+  $('.aside-slider__list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,               
+    dots: false,
+    arrows:true,
+    infinite: true
+  });
+}

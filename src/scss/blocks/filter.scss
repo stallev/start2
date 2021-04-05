@@ -144,3 +144,54 @@
   font-weight: 400;
   cursor: pointer;
 }
+
+//стили для фильтра по цене
+.filter__price-filter{
+  margin: 15px 7px;
+}
+.filter__price-control{
+  padding: 15px 0;
+  &-name{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px solid #26b;
+    transition: all .4s ease-in;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &-range{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #222;
+  }
+}
+.noUi-tooltip{
+  display: none;
+}
+.noUi-active .noUi-tooltip{
+  display: block;
+}
+.noUi-horizontal .noUi-origin{
+}
+.noUi-connect{
+  background: #999;
+  margin-top: 10px;
+  height: 3px;
+}
+// .noUi-horizontal .noUi-handle {
+//   width: 1.2rem;
+//   height: 1.2rem;
+//   background: #26b;
+// }
+.noUi-horizontal .noUi-handle{
+  top: 3px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  background-color: #26b;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+}

@@ -74,15 +74,3 @@ if(hiddenItemsControls){
 	)
 }
 
-//изменяем чекбоксы в фильтре
-let chkboxFilterLinks = document.querySelectorAll('.filter__options-list--chkbox .filter__option-link');
-if(chkboxFilterLinks){
-	chkboxFilterLinks.forEach(
-		element => {
-			element.addEventListener('click', function(e){
-				e.preventDefault();
-				e.target.closest('.filter__option-link').classList.toggle('checked-option');
-			})
-		}
-	)
-}

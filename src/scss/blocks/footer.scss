@@ -4,7 +4,6 @@
   &__content{
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
   }
   &__top{
   }
@@ -12,6 +11,7 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
   }
   &__top, &__middle{
     padding: 28px 0;
@@ -70,9 +70,10 @@
   .footer{
     &__top{
       display: flex;
-      align-items: flex-start;
+      align-items: center;
     }
     &__logo{
+      margin-bottom: 0;
       width: 25%;
     }
     &__subscribe{

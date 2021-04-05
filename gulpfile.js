@@ -79,7 +79,7 @@ function copyFonts() {
 }
 
 function scriptsVendors() {
-  return gulp.src(paths.src + 'js/vendors/*.js')
+  return gulp.src(paths.src + 'js/vendor/*.js')
     .pipe(concat('vendors.min.js'))
     .pipe(gulp.dest(paths.build + 'js/'))
 }

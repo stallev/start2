@@ -26,7 +26,15 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.container--page-header{}
+.container--mail-us,
+.container--about{
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.container--stores{
+  padding-top: 0;
+  padding-bottom: 60px;
+}
 
 @media only screen and (min-width: 993px){
   .container{
@@ -49,5 +57,10 @@
   .container--blog-section{
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .container--mail-us,
+  .container--about{
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 }

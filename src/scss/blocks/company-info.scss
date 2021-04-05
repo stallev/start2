@@ -45,6 +45,13 @@
     color: rgb(153, 153, 153);
   }
 }
+@media only screen and (min-width: 577px){
+  .company-info{
+    &__block--instagram{
+      width: 50%;
+    }
+  }
+}
 @media only screen and (min-width: 769px){
   .company-info{
     display: flex;

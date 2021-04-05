@@ -1,0 +1,13 @@
+.reviews{
+  background-color: rgb(246, 247, 249);
+}
+.review{
+  background-color: #fff;
+  color: #222;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+  }
+}

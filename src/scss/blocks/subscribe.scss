@@ -26,6 +26,7 @@
   }
   &__input{
     display: block;
+    flex-shrink: 2;
     padding: 5px 10px;
     background: #2c2c2c;
     margin-right: 5px;
@@ -35,7 +36,7 @@
   }
   &__submit-btn{
     display: block;
-    padding: 10px 30px;
+    padding: 10px 15px;
     font-weight: 700;
     background-color: #26b;
     text-transform: uppercase;

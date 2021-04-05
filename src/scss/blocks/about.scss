@@ -1,0 +1,52 @@
+.about{
+  &__item{
+    &-img{
+      display: block;
+      width: 100%;
+    }
+    &--img{
+      margin-bottom: 30px;
+    }
+    &-header-question{
+      color: #999;
+      font-size: 1.4rem;
+      line-height: 1.86;
+      text-transform: uppercase;
+    }
+    &-header-title{
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    &-header-descr{
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2.6rem;
+    }
+    &-header-ordinary-info{
+      margin-bottom: 40px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.6rem;
+    }
+    &-counts-block{
+      margin-bottom: 30px;
+    }
+    &-counts-value{
+      display: block;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #26b;
+    }
+    &-counts-title{
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #26b;
+    }
+  }
+}
+@media only screen and (min-width: 993px){}

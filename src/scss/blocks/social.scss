@@ -1,0 +1,34 @@
+.social{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  &__link{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
+    font-size: 1.4rem;
+    transition: all .4s ease-in-out;
+    &--store{
+      color: #fff;
+      border: none;
+    }
+    &:hover{
+      color: rgb(232, 232, 232);
+      background-color: rgb(218, 218, 218);
+      border-color: rgb(37, 126, 235);
+    }
+  }
+}
+.social__link--store{
+  color: #fff;
+}
+.social__link--store:hover{
+  background-color: rgb(73, 138, 218);
+  border-color: rgb(37, 126, 235);
+}
