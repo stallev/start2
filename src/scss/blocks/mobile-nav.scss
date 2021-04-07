@@ -31,9 +31,9 @@
   transform: translateX(-290px);
 }
 .mobile-nav__icon-close-wrap{
-  position: absolute;
-  top: 25px;
-  right: 25px;
+  position: fixed;
+  top: 15px;
+  left: calc(100vw - 30px);
   cursor: pointer;
 }
 .mobile-nav__icon-close{

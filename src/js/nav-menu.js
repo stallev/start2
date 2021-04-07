@@ -84,16 +84,12 @@ if(footerMenu&&(screenWidth<769)){
 		if (st > scrollPos){
 			//$('#result').html('Вниз');
 			console.log('st');
-			body.classList.add('show-footer-menu');
+			document.querySelector('footer').classList.add('show-footer-menu');
 		} else {
 			//$('#result').html('Вверх');
 			console.log('st');
-			//body.classList.remove('show-footer-menu');
+			document.querySelector('footer').classList.remove('show-footer-menu');
 		}
 		scrollPos = st;
  });
-	// window.addEventListener('scroll', function(){
-	// 	console.log('14585');
-	// 	body.classList.add('show-footer-menu');
-	// })
 }

@@ -2,6 +2,24 @@
   display: flex;
   width: fit-content;
   margin: 0 auto;
+  &--post{
+    & .social__link{
+      border-color: transparent;
+      &:hover{
+        background-color: transparent;
+        color: #26b;
+      }
+    }
+    & .social__link--fb{
+      color: #8f79ed;
+    }
+    & .social__link--tw{
+      color: #79c8ed;
+    }
+    & .social__link--ln{
+      color: #e66262;
+    }
+  }
   &__link{
     display: inline-block;
     width: 30px;

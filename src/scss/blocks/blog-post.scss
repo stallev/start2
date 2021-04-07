@@ -1,0 +1,296 @@
+//посты на странице блога в списке
+.blog-posts-list-content{
+  padding: 25px 0;
+}
+.blog-post{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(153, 153, 153);
+  &__inner-link{
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__img-wrap{
+    display: block;
+    margin: 0;
+  }
+  &__img{
+    display: block;
+    width: 100%;
+  }
+  &__meta{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 6px;
+    color: rgb(153, 153, 153);
+    font-size: 1.3rem;
+    & a, & span{
+      display: inline-block;
+      margin-right: 12px;
+      padding: 0 10px;
+      @include colorOnHover;
+      cursor: pointer;
+    }
+  }
+  &__date{
+    border-left: 1px solid rgb(153, 153, 153);
+    border-right: 1px solid rgb(153, 153, 153);
+  }
+  &__title{
+    display: block;
+    margin-bottom: 4px;
+    @include colorOnHover;
+    color: rgb(34, 52, 74);
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  &__categories{
+    margin-bottom: 10px;
+    color: rgb(153, 153, 153);
+    font-size: 1.3rem;
+    & a, & span{
+      display: inline-block;
+      padding: 0 2px;
+      @include colorOnHover;
+      cursor: pointer;
+    }
+  }
+  &__excerpt{
+    margin-bottom: 1.6rem;
+    line-height: 1.85;
+    font-size: 1.4rem;
+    color: #664;
+  }
+  &__readmore{
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #26b;
+    text-transform: uppercase;
+    text-align: center;
+    transition: color .3s,border-color .3s,background-color .3s,box-shadow .3s;
+    white-space: nowrap;
+    cursor: pointer;
+    &::before{
+      display: block;
+      position: absolute;
+      bottom: -6px;
+      left: 0; 
+      width: 0;
+      height: 2px; 
+      background-color: #26b; 
+      content: "";
+      transition: width 0.4s ease-out;
+      @include absoluteXCenter;
+    }
+    &::after{
+      position: absolute;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .4s ease-in-out;
+      content: '\f178';
+      right: -20px;
+      font-size: 2.5rem;
+      color: #26b;
+      @include absoluteYCenter;
+      font-size: 1.4rem;
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+  &__paragraph{
+    margin-bottom: 25px;
+    line-height: 1.85;
+    font-size: 1.4rem;
+    color: #664;
+    & a{
+      text-decoration: underline;
+      @include colorOnHover;
+    }
+  }
+  & figure{
+    margin: 0;
+  }
+  &__with-img{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  &__body{
+    padding-top: 30px;
+  }
+  &__body-img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__paragraph--checked{
+    position: relative;
+    padding-left: 25px;
+    &::before{
+      position: absolute;
+      display: block;
+      content: '\f00c';
+      top: 2px;
+      left: 5px;
+      width: 30px;
+      height: 30px;
+      color: #222;
+      font-size: 1.5rem;
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 400;
+    }
+  }
+  &__body h4{
+    margin-bottom: 17px;
+    font-size: 2.4rem;
+  }
+  &__blockquote{
+    position: relative;
+    margin: 15px 0 40px;
+    padding: 4rem 3rem 4rem 11.7rem;
+    border-left: 2px solid #26b;
+    background-color: #f2f3f5;
+    &::before{
+      content: "\f10e";
+      display: inline-block;
+      position: absolute;
+      left: 3.8rem;
+      top: 50%;
+      font-weight: 900;
+      font-size: 3rem;
+      line-height: 0;
+      font-family: "Font Awesome 5 Pro";
+      color: #999;
+    }
+    & p{
+      font-size: 1.8rem;
+      line-height: 1.67;
+      color: #222;
+    }
+  }
+  &__footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  &__tags{
+    margin-bottom: 25px;
+  }
+  &__tag-item{
+    display: inline-block;
+    margin: .5rem .2rem .5rem 0;
+    padding: 3px 5px;
+    font-size: 1.3rem;
+    letter-spacing: .01em;
+    border-color: #ebebeb;
+    background: #f2f3f5;
+    color: #999;
+    line-height: 2.8rem;
+    transition: all .4s ease-in-out;
+    &:hover{
+      color: #fff;
+      background-color: #26b;
+    }
+  }
+  &__share-text{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #664;
+  }
+  &__social-wrap{
+    display: inline-block;
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  &__nav-link{
+    display: block;
+    width: 48%;
+    font-size: 1.4rem;
+    color: #222;
+    line-height: 1.7;
+    @include colorOnHover;
+  }
+  &__nav-link-name{
+    font-weight: 700;
+  }
+}
+.blog-post__readmore:hover::after{
+  opacity: 1;
+  visibility: visible;
+}
+.blog-post__readmore:hover::before{
+  width: 100%;
+}
+
+//слайдер "Похожие статьи"
+.blog-posts-similar{
+  &-posts{
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(153, 153, 153)
+  }
+  &-title{
+    margin-bottom: 2.6rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    color: #222;
+  }
+}
+
+.blog-post--slide{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  & .blog-post__date{
+    border-left: none;
+  }
+  & .blog-post__title{
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 576px){
+  //расстояние между слайдами
+  .blog-posts-similar-slider {
+    & .slick-slide {
+      margin-left: 20px;
+    }
+    & .slick-list {
+      margin-left: -20px;
+    }
+  }
+}
+@media only screen and (min-width: 769px){
+  .blog-post{
+    &__body-img{
+      width: auto;
+      max-width: 100%;
+      margin-right: 20px;
+    }
+    &__with-img{
+      flex-direction: row;
+      & figure{
+        flex-shrink: 0;
+      }
+    }
+    &__footer{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__tags{
+      margin-bottom: 0;
+    }
+  }
+}

@@ -84,6 +84,9 @@
     justify-content: space-around;
     padding-bottom: 10px;
   }
+  &__mobile-nav-item{
+    flex-grow: 2;
+  }
   &__mobile-nav-link{
     display: flex;
     flex-direction: column;

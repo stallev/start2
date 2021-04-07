@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">  
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="../img/decor/favicon.png" type="image/png" />
-  <title>О нас</title>
+  <title>Блог</title>
 </head>
 <body>
   <div class="wrapper">
@@ -144,207 +144,350 @@
         <div class="container-fluid container--page-header">
           <div class="page-title page-title--contact-us">
             <h1 class="page-title__text">
-              Свяжитесь с нами
+              Наш блог
             </h1>
           </div>
         </div>
       </section>
-      <section class="mail-us">
-        <div class="container-fluid container--mail-us">
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-5 mail-us__info">
-              <div class="mail-us__info-header">
-                <h2 class="mail-us__title">напишите нам</h2>
-                <p class="mail-us__descr">
-                  Заполните контактную форму, отправьте и мы Вам ответим
-                </p>
-              </div>
-              <ul class="mail-us__contacts-list">
-                <li class="mail-us__contacts-item">
-                  <h4 class="mail-us__contacts-item-title">
-                    Адрес
-                  </h4>
-                  <span class="mail-us__contacts-item-content">
-                    весь мир
-                  </span>
-                </li>
-                <li class="mail-us__contacts-item">
-                  <h4 class="mail-us__contacts-item-title">
-                    Телефон
-                  </h4>
-                  <a href="tel:000000000000" class="mail-us__contacts-item-content">
-                    +000-00-000-00-00
-                  </a>
-                </li>
-                <li class="mail-us__contacts-item">
-                  <h4 class="mail-us__contacts-item-title">
-                    Поддержка
-                  </h4>
-                  <a href="mailto:mail@company.com" class="mail-us__contacts-item-content">
-                    support@company.com
-                  </a>
-                  <a href="mailto:mail@company.com" class="mail-us__contacts-item-content">
-                    help@company.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-9 col-md-8 col-xs-7 mail-us__form-wrap">
-              <form action="#" class="mail-us__form contact-form">
-                <h4 class="contact-form__title">
-                  Контактная форма
-                </h4>
-                <p class="contact-form__descr">
-                  Ваш электронный адрес не будет опубликован. Обязательные поля помечены *
-                </p>
-                <div class="contact-form__input-block">
-                  <div class="row contact-form__input-list">
-                    <div class="col-md-6">
-                      <input type="text" placeholder="Имя *" name="person-name" class="contact-form__input-field contact-form__input-field--name">
-                    </div>
-                    <div class="col-md-6">
-                      <input type="text" placeholder="Электронная почта *" name="person-email" class="contact-form__input-field contact-form__input-field--email">
-                    </div>
-                    <div class="col-12">
-                      <textarea placeholder="Ваше сообщение *" class="contact-form__input-field contact-form__input-field--message" name="person-message"  cols="30" rows="4"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <button class="contact-form__submit-btn" type="submit">отправить сообщение</button>
-              </form>
-            </div>
-          </div>
+      <div class="breadcrumbs breadcrumbs--blog">
+        <div class="container-fluid container--breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="blog.html" class="breadcrumbs__link">
+                Блог
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="stores">
-        <div class="container-fluid container--stores">
-          <div class="section-title">
-            <h2 class="section-title__text section-title__text--popular">
-              наши магазины
-            </h2>
+      </div>
+      <div class="container-fluid container--blog">
+        <div class="row main__blog-content-wrap">
+          <div class="col-lg-9 blog-posts-list-wrap">
+            <div class="blog-posts-list-content">
+              <article class="blog-post">
+                <figure class="blog-post__img-wrap">
+                  <a href="post.html" class="blog-post__inner-link">
+                    <img src="../img/content/blog/1_lg.jpg" alt="blog" class="blog-post__img">
+                  </a>
+                </figure>
+                <div class="blog-post__details">
+                  <div class="blog-post__meta">
+                    <a href="blog.html" class="blog-post__author">Михаил Карпеченко</a>
+                    <a href="blog.html" class="blog-post__date">
+                      Окт. 22, 2020
+                    </a>
+                    <span class="blog-post__comments-count">2 комментария</span>
+                  </div>
+                  <a href="post.html" class="blog-post__title-wrap">
+                    <h4 class="blog-post__title">
+                      Заголовок статьи блога
+                    </h4>
+                  </a>
+                  <p class="blog-post__categories">
+                    в 
+                    <a href="blog.html" class="blog-post__category-link">Полезные лайфхаки</a>,
+                    <a href="blog.html" class="blog-post__category-link">Строительство</a>
+                  </p>
+                  <div class="blog-post__body">
+                    <p class="blog-post__excerpt">
+                      Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue.
+                    </p>
+                  </div>
+                  <a href="post.html" class="blog-post__readmore">читать далее</a>
+                </div>
+              </article>
+              <article class="blog-post">
+                <figure class="blog-post__img-wrap">
+                  <a href="post.html" class="blog-post__inner-link">
+                    <img src="../img/content/blog/2_lg.jpg" alt="blog" class="blog-post__img">
+                  </a>
+                </figure>
+                <div class="blog-post__details">
+                  <div class="blog-post__meta">
+                    <a href="blog.html" class="blog-post__author">Наталья Петрова</a>
+                    <a href="blog.html" class="blog-post__date">
+                      Окт. 22, 2020
+                    </a>
+                    <span class="blog-post__comments-count">2 комментария</span>
+                  </div>
+                  <a href="post.html" class="blog-post__title-wrap">
+                    <h4 class="blog-post__title">
+                      Заголовок статьи блога
+                    </h4>
+                  </a>
+                  <p class="blog-post__categories">
+                    в 
+                    <a href="blog.html" class="blog-post__category-link">Технологии</a>,
+                    <a href="blog.html" class="blog-post__category-link">Строительство</a>
+                  </p>
+                  <div class="blog-post__body">
+                    <p class="blog-post__excerpt">
+                      Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue.
+                    </p>
+                  </div>
+                  <a href="post.html" class="blog-post__readmore">читать далее</a>
+                </div>
+              </article>
+              <article class="blog-post">
+                <figure class="blog-post__img-wrap">
+                  <a href="post.html" class="blog-post__inner-link">
+                    <img src="../img/content/blog/3_lg.jpg" alt="blog" class="blog-post__img">
+                  </a>
+                </figure>
+                <div class="blog-post__details">
+                  <div class="blog-post__meta">
+                    <a href="blog.html" class="blog-post__author">Федор Терещенко</a>
+                    <a href="blog.html" class="blog-post__date">
+                      Сент. 22, 2020
+                    </a>
+                    <span class="blog-post__comments-count">2 комментария</span>
+                  </div>
+                  <a href="post.html" class="blog-post__title-wrap">
+                    <h4 class="blog-post__title">
+                      Заголовок статьи блога
+                    </h4>
+                  </a>
+                  <p class="blog-post__categories">
+                    в 
+                    <a href="blog.html" class="blog-post__category-link">Полезные лайфхаки</a>,
+                    <a href="blog.html" class="blog-post__category-link">Строительство</a>
+                  </p>
+                  <div class="blog-post__body">
+                    <p class="blog-post__excerpt">
+                      Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue.
+                    </p>
+                  </div>
+                  <a href="post.html" class="blog-post__readmore">читать далее</a>
+                </div>
+              </article>
+              <article class="blog-post">
+                <figure class="blog-post__img-wrap">
+                  <a href="post.html" class="blog-post__inner-link">
+                    <img src="../img/content/blog/4_lg.jpg" alt="blog" class="blog-post__img">
+                  </a>
+                </figure>
+                <div class="blog-post__details">
+                  <div class="blog-post__meta">
+                    <a href="blog.html" class="blog-post__author">Федор Терещенко</a>
+                    <a href="blog.html" class="blog-post__date">
+                      Сент. 22, 2020
+                    </a>
+                    <span class="blog-post__comments-count">2 комментария</span>
+                  </div>
+                  <a href="post.html" class="blog-post__title-wrap">
+                    <h4 class="blog-post__title">
+                      Заголовок статьи блога
+                    </h4>
+                  </a>
+                  <p class="blog-post__categories">
+                    в 
+                    <a href="blog.html" class="blog-post__category-link">Полезные лайфхаки</a>,
+                    <a href="blog.html" class="blog-post__category-link">Строительство</a>
+                  </p>
+                  <div class="blog-post__body">
+                    <p class="blog-post__excerpt">
+                      Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue.
+                    </p>
+                  </div>
+                  <a href="post.html" class="blog-post__readmore">читать далее</a>
+                </div>
+              </article>
+              <article class="blog-post">
+                <figure class="blog-post__img-wrap">
+                  <a href="post.html" class="blog-post__inner-link">
+                    <img src="../img/content/blog/5_lg.jpg" alt="blog" class="blog-post__img">
+                  </a>
+                </figure>
+                <div class="blog-post__details">
+                  <div class="blog-post__meta">
+                    <a href="blog.html" class="blog-post__author">Федор Терещенко</a>
+                    <a href="blog.html" class="blog-post__date">
+                      Сент. 22, 2020
+                    </a>
+                    <span class="blog-post__comments-count">2 комментария</span>
+                  </div>
+                  <a href="post.html" class="blog-post__title-wrap">
+                    <h4 class="blog-post__title">
+                      Заголовок статьи блога
+                    </h4>
+                  </a>
+                  <p class="blog-post__categories">
+                    в 
+                    <a href="blog.html" class="blog-post__category-link">Полезные лайфхаки</a>,
+                    <a href="blog.html" class="blog-post__category-link">Строительство</a>
+                  </p>
+                  <div class="blog-post__body">
+                    <p class="blog-post__excerpt">
+                      Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue.
+                    </p>
+                  </div>
+                  <a href="post.html" class="blog-post__readmore">читать далее</a>
+                </div>
+              </article>
+            </div>
+            <div class="pagination pagination--blog">
+              <div class="pagination__list">
+                <a href="#" class="pagination__control pagination__control--prev">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <span class="pagination__item pagination__item--current">
+                  <a href="#" class="pagination__item-link">1</a>
+                </span>
+                <span class="pagination__item">
+                  <a href="#" class="pagination__item-link">2</a>
+                </span>
+                <span class="pagination__item">
+                  <a href="#" class="pagination__item-link">3</a>
+                </span>
+                <span class="pagination__item">
+                  <span class="pagination__item-link">...</span>
+                </span>
+                <span class="pagination__item">
+                  <a href="#" class="pagination__item-link">5</a>
+                </span>
+                <a href="#" class="pagination__control pagination__control--next">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="row stores__list">
-            <div class="col-sm-6 col-lg-3 store">
-              <div class="store__content">
-                <div class="store__img-wrap">
-                  <h3 class="store__title">москва</h3>
-                  <img src="../img/content/subpages/store-1.jpg" alt="москва" class="store__img">
+          <aside class="col-lg-3 sidebar sidebar--right">
+            <div class="sidebar__overlay"></div>
+            <div class="sidebar__icon-close-wrap">
+              <span class="sidebar__icon-close">
+              </span>
+            </div>
+            <a href="blog.html#" class="sidebar-toggle"><i class="fas fa-chevron-left"></i></a>
+            <div class="sidebar__content">
+              <div class="srch-wdg">
+                <div class="srch-wdg__inner">
+                  <form action="blog.html" class="srch-wdg__form">
+                    <input type="text" placeholder="Поиск..." class="srch-wdg__input">
+                    <button class="srch-wdg__btn" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
                 </div>
-                <div class="store__overlay">
-                  <h4 class="store__overlay-title">москва</h4>
-                  <a href="mailto:mail.company.by" class="store__overlay-mail">mail.company.by</a>
-                  <div class="store__overlay-phone-block">
-                    <span class="store__overlay-phone-label">Телефон: </span>
-                    <a href="tel:000000000000" class="store__overlay-phone-linl">00-00-000-00-00</a>
-                  </div>
-                  <div class="store__overlay-social-block">
-                    <div class="social">
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-facebook-f"></i>
+              </div>
+              <div class="sidebar__wdg-list">
+                <div class="sidebar__wdg wdg">
+                  <h4 class="wdg__title sublist-title">
+                    темы статей
+                  </h4>
+                  <ul class="wdg__options-list">
+                    <li class="wdg__option-item">
+                      <a href="blog.html" class="wdg__option-link">Строительство</a>
+                    </li>
+                    <li class="wdg__option-item">
+                      <a href="blog.html" class="wdg__option-link">Отделочные работы</a>
+                    </li>
+                    <li class="wdg__option-item">
+                      <a href="#" class="wdg__option-link sublist-title">Покраска
+                        <span class="hidden-items-control wdg__option-link-open-sublist"></span>
                       </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-twitter"></i>
+                      <ul class="wdg__options-sub1list hidden-items">
+                        <li class="wdg__option-item wdg__option-item--sublist">
+                          <a href="blog.html" class="wdg__option-link">
+                            Подготовка поверхности
+                          </a>
+                        </li>
+                        <li class="wdg__option-item wdg__option-item--sublist">
+                          <a href="blog.html" class="wdg__option-link">
+                            Выбор краски
+                          </a>
+                        </li>
+                        <li class="wdg__option-item wdg__option-item--sublist">
+                          <a href="blog.html" class="wdg__option-link">
+                            Технология нанесения
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="wdg__option-item">
+                      <a href="blog.html" class="wdg__option-link">Планировка дома</a>
+                    </li>
+                    <li class="wdg__option-item">
+                      <a href="blog.html" class="wdg__option-link">Полезные лайфхаки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sidebar__wdg wdg wdg--pop-articles">
+                  <h4 class="wdg__title">
+                    Популярные статьи
+                  </h4>
+                  <ul class="wdg__options-list">
+                    <li class="wdg__option-item wdg__option-item--article">
+                      <a href="post.html" class="wdg__option-item-img-wrap">
+                        <img src="../img/content/blog/1_xs.jpg" alt="" class="wdg__option-item-img">
                       </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-linkedin-in"></i>
+                      <div class="wdg__option-item-details">
+                        <a href="post.html" class="wdg__option-item-date">
+                          фев. 11, 2020
+                        </a>
+                        <a href="post.html" class="wdg__option-item-title">
+                          Заголовок статьи блога
+                        </a>
+                      </div>                         
+                    </li>
+                    <li class="wdg__option-item wdg__option-item--article">
+                      <a href="post.html" class="wdg__option-item-img-wrap">
+                        <img src="../img/content/blog/2_xs.jpg" alt="" class="wdg__option-item-img">
                       </a>
-                    </div>
+                      <div class="wdg__option-item-details">
+                        <a href="post.html" class="wdg__option-item-date">
+                          фев. 11, 2020
+                        </a>
+                        <a href="post.html" class="wdg__option-item-title">
+                          Заголовок статьи блога
+                        </a>
+                      </div>                         
+                    </li>
+                    <li class="wdg__option-item wdg__option-item--article">
+                      <a href="post.html" class="wdg__option-item-img-wrap">
+                        <img src="../img/content/blog/3_xs.jpg" alt="" class="wdg__option-item-img">
+                      </a>
+                      <div class="wdg__option-item-details">
+                        <a href="post.html" class="wdg__option-item-date">
+                          фев. 11, 2020
+                        </a>
+                        <a href="post.html" class="wdg__option-item-title">
+                          Заголовок статьи блога
+                        </a>
+                      </div>                         
+                    </li>
+                  </ul>
+                </div>
+                <div class="sidebar__wdg wdg wdg--about">
+                  <h4 class="wdg__title">
+                    о нас
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt.
+                  </p>
+                </div>
+                <div class="sidebar__wdg wdg wdg--tags">
+                  <h4 class="wdg__title">
+                    облако тегов
+                  </h4>
+                  <div class="wdg__list">
+                    <a href="blog.html" class="wdg__tag-item">Кладка</a>
+                    <a href="blog.html" class="wdg__tag-item">Грунт</a>
+                    <a href="blog.html" class="wdg__tag-item">Облицовочные материалы</a>
+                    <a href="blog.html" class="wdg__tag-item">Краска</a>
+                    <a href="blog.html" class="wdg__tag-item">Фундамент</a>
+                    <a href="blog.html" class="wdg__tag-item">Дизайн</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-3 store">
-              <div class="store__content">
-                <div class="store__img-wrap">
-                  <h3 class="store__title">минск</h3>
-                  <img src="../img/content/subpages/store-2.jpg" alt="москва" class="store__img">
-                </div>
-                <div class="store__overlay">
-                  <h4 class="store__overlay-title">минск</h4>
-                  <a href="mailto:mail.company.by" class="store__overlay-mail">mail.company.by</a>
-                  <div class="store__overlay-phone-block">
-                    <span class="store__overlay-phone-label">Телефон: </span>
-                    <a href="tel:000000000000" class="store__overlay-phone-linl">00-00-000-00-00</a>
-                  </div>
-                  <div class="store__overlay-social-block">
-                    <div class="social">
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-linkedin-in"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 store">
-              <div class="store__content">
-                <div class="store__img-wrap">
-                  <h3 class="store__title">воронеж</h3>
-                  <img src="../img/content/subpages/store-3.jpg" alt="москва" class="store__img">
-                </div>
-                <div class="store__overlay">
-                  <h4 class="store__overlay-title">воронеж</h4>
-                  <a href="mailto:mail.company.by" class="store__overlay-mail">mail.company.by</a>
-                  <div class="store__overlay-phone-block">
-                    <span class="store__overlay-phone-label">Телефон: </span>
-                    <a href="tel:000000000000" class="store__overlay-phone-linl">00-00-000-00-00</a>
-                  </div>
-                  <div class="store__overlay-social-block">
-                    <div class="social">
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-linkedin-in"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 store">
-              <div class="store__content">
-                <div class="store__img-wrap">
-                  <h3 class="store__title">смоленск</h3>
-                  <img src="../img/content/subpages/store-4.jpg" alt="москва" class="store__img">
-                </div>
-                <div class="store__overlay">
-                  <h4 class="store__overlay-title">смоленск</h4>
-                  <a href="mailto:mail.company.by" class="store__overlay-mail">mail.company.by</a>
-                  <div class="store__overlay-phone-block">
-                    <span class="store__overlay-phone-label">Телефон: </span>
-                    <a href="tel:000000000000" class="store__overlay-phone-linl">00-00-000-00-00</a>
-                  </div>
-                  <div class="store__overlay-social-block">
-                    <div class="social">
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#" class="social__link social__link--store">
-                        <i class="fab fa-linkedin-in"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </aside>
         </div>
-      </section>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2014308.3992805677!2d32.2519107877807!3d54.06124912366457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1617572078307!5m2!1sru!2sby" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </main>
     <footer class="footer">
@@ -571,7 +714,6 @@
         </div>
       </div>
     </footer>
-    
   </div>
   <div class="mobile-nav-wrap">
     <div class="mobile-nav-overlay"></div>
