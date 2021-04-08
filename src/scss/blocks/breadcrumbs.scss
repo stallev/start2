@@ -29,10 +29,12 @@
     font-size: 1.4rem;
   }
 }
-.breadcrumbs--blog .breadcrumbs__item{
+.breadcrumbs--blog .breadcrumbs__item,
+.breadcrumbs--product .breadcrumbs__item{
   color: rgb(114, 114, 114);
 }
-.breadcrumbs--blog .breadcrumbs__item::after{
+.breadcrumbs--blog .breadcrumbs__item::after,
+.breadcrumbs--product .breadcrumbs__item::after{
   position: absolute;
   display: block;
   content: '\f105';
@@ -47,6 +49,7 @@
   font-weight: 400;
   cursor: pointer;
 }
-.breadcrumbs--blog .breadcrumbs__item:last-of-type::after{
+.breadcrumbs--blog .breadcrumbs__item:last-of-type::after,
+.breadcrumbs--product .breadcrumbs__item:last-of-type::after{
   display: none;
 }

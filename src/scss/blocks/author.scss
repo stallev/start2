@@ -97,6 +97,29 @@
     }
   }
 }
+.author__reviews{
+  border-bottom: 1px solid #ccc;
+  & .author__wrap:first-of-type{
+    border-top: none;
+  }
+  & .author__wrap{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgb(153, 153, 153);
+  }
+  & .author__details-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  & .author__descr{
+    margin: 0;
+  }
+  & .author__rating{
+    margin: 0;
+  }
+}
 @media only screen and (min-width: 769px){
   .author{
     &__details-wrap{

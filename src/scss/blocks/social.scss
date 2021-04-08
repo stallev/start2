@@ -20,6 +20,17 @@
       color: #e66262;
     }
   }
+  &--product-page{
+    margin: 0;
+    & .social__link{
+      color: #ccc;
+      &:hover{
+        background-color: #26b;
+        color: #fff;
+        border-color: #26b;
+      }
+    }
+  }
   &__link{
     display: inline-block;
     width: 30px;

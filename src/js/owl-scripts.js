@@ -66,15 +66,15 @@ if($('.products-list__inner--bestsellers-slider')){
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
           dots: true,
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 2,
           dots: true,
         }
@@ -105,14 +105,14 @@ if($('.products-list__inner--popular-slider')){
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           dots: true,
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           dots: true,
         }
       }

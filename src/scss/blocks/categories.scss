@@ -37,6 +37,14 @@
 .categories__item:hover .categories__item-img-wrap{
   transform: scale(1.2);
 }
+@media only screen and (min-width: 576px){
+  .categories{
+    &__item-title{
+      padding: 25px 6px 17px;
+      font-size: 1.5rem;
+    }
+  }
+}
 @media only screen and (min-width: 769px){
   .categories{
     &__list{
