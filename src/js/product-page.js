@@ -85,3 +85,34 @@ if(productNavTabLinks&&productNavTabs){
 		}
 	)
 }
+
+//счетчик товаров
+let countBox = document.querySelectorAll('.count-box');
+if(countBox){
+  countBox.forEach(
+    counter => {
+      let minusBtn = counter.querySelector('.count-box__minus');
+      let plusBtn = counter.querySelector('.count-box__plus');
+      let countField = counter.querySelector('.count-box__value');
+      let countStr = countField.value;
+      let countValue = Number(countStr);
+      minusBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        if(countValue > 1){
+          countValue--;
+          countStr = String(countValue);
+          countField.value = countStr;
+        }
+      });
+      plusBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        if(countValue < 100000){
+          countValue++;
+          countStr = String(countValue);
+          countField.value = countStr;
+        }
+      });
+      console.log(countValue);
+    }
+  )
+}

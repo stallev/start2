@@ -83,11 +83,9 @@ if(footerMenu&&(screenWidth<769)){
 		var st = $(this).scrollTop();
 		if (st > scrollPos){
 			//$('#result').html('Вниз');
-			console.log('st');
 			document.querySelector('footer').classList.add('show-footer-menu');
 		} else {
 			//$('#result').html('Вверх');
-			console.log('st');
 			document.querySelector('footer').classList.remove('show-footer-menu');
 		}
 		scrollPos = st;

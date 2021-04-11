@@ -1,0 +1,56 @@
+//навигация вверху страницы оформления заказа
+.steps-nav-wrap{
+  padding-top: 140px;
+  padding-bottom: 55px;
+}
+.steps-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  &__item{
+    position: relative;
+    display: inline-block;
+    margin-right: 45px;
+    padding: 5px 0;
+    &::after{
+      position: absolute;
+      display: block;
+      content: '\f105';
+      right: -28px;
+      top: 50%;
+      transform: translate(0, -100%);
+      width: 10px;
+      height: 10px;
+      color: rgb(114, 114, 114);
+      font-size: 2rem;
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 400;
+      cursor: pointer;
+    }
+    &:last-of-type::after{
+      display: none;
+    }
+  }
+  &__link{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.7;
+    @include colorOnHover;
+    &--active{
+      color: #26b;
+    }
+  }
+}
+@media only screen and (min-width: 769px){
+  .steps-nav-wrap{
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+}
+@media only screen and (min-width: 993px){
+  .steps-nav-wrap{
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+}
