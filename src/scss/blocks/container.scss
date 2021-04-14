@@ -47,6 +47,15 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+.container--policy{
+  padding-top: 100px;
+}
+
+@media only screen and (min-width: 769px){
+  .container--policy{
+    padding-top: 45px;
+  }
+}
 @media only screen and (min-width: 993px){
   .container{
     width: 100%;
@@ -58,7 +67,7 @@
   .container--header{
 		padding: 0px 30px;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: space-between;
 		min-height: 70px;
   }
   .container--adv-online{
@@ -81,5 +90,11 @@
   .container--team{
     padding-top: 30px;
     padding-bottom: 60px;
+  }
+  .container--policy{
+    padding-top: 30px;
+  }
+  div.container--quickview{
+    max-width: 800px;
   }
 }

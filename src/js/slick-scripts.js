@@ -51,9 +51,11 @@ if($('.products-list__inner--bestsellers-slider')){
     margin: 45,
     slidesToScroll: 1,               
     dots: false,
-    arrows:false,
+    //arrows:false,
     infinite: true,
     dotsClass: 'bestseller-slider__slick-dots',
+    prevArrow:'<button class="bestseller-prev"><i class="far fa-angle-left"></i></button>',
+    nextArrow:'<button class="bestseller-next"><i class="far fa-angle-right"></i></button>',
     responsive: [
       {
         breakpoint: 993,
@@ -90,7 +92,8 @@ if($('.products-list__inner--popular-slider')){
     margin: 45,
     slidesToScroll: 1,               
     dots: false,
-    arrows:false,
+    prevArrow:'<button class="bestseller-prev"><i class="far fa-angle-left"></i></button>',
+    nextArrow:'<button class="bestseller-next"><i class="far fa-angle-right"></i></button>',
     infinite: true,
     dotsClass: 'bestseller-slider__slick-dots',
     responsive: [

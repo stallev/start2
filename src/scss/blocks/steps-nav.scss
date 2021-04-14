@@ -1,7 +1,7 @@
 //навигация вверху страницы оформления заказа
 .steps-nav-wrap{
   padding-top: 140px;
-  padding-bottom: 55px;
+  padding-bottom: 35px;
 }
 .steps-nav{
   display: flex;
@@ -23,7 +23,7 @@
       width: 10px;
       height: 10px;
       color: rgb(114, 114, 114);
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-family: 'Font Awesome 5 Pro';
       font-weight: 400;
       cursor: pointer;
@@ -33,9 +33,9 @@
     }
   }
   &__link{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.7;
+    line-height: 1.9;
     @include colorOnHover;
     &--active{
       color: #26b;
@@ -47,10 +47,30 @@
     padding-top: 50px;
     padding-bottom: 55px;
   }
+  .steps-nav{
+    &__item{
+      &::after{
+        font-size: 1.7rem;
+      }
+    }
+    &__link{
+      font-size: 1.7rem;
+    }
+  }
 }
 @media only screen and (min-width: 993px){
   .steps-nav-wrap{
     padding-top: 55px;
     padding-bottom: 75px;
+  }
+  .steps-nav{
+    &__item{
+      &::after{
+        font-size: 2rem;
+      }
+    }
+    &__link{
+      font-size: 2rem;
+    }
   }
 }

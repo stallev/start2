@@ -2,7 +2,7 @@
   padding: 15px 0;
   border-top: 3px solid #cdcdcd;
   &__title{
-    padding: 22px 0 14px 2px;
+    padding: 14px 0 14px 2px;
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -10,6 +10,9 @@
   }
   &__option-item{
     border-bottom: 1px solid rgb(238, 238, 238);
+    &:last-of-type{
+      border-bottom: none;
+    }
   }
   &__options-list{
     transition: height .4s ease-in-out;
@@ -47,31 +50,43 @@
 .filter .filter__title-open-list{
   position: absolute;
   display: block;
-  top: 50%;
-  right: 20px;
+  top: 85%;
+  right: 31px;
   width: 1px;
   height: 1px;
   &::before{
     position: absolute;
     top: -20px;
     right: -23px;
-    content: '+';
+    width: 10px;
+    height: 2px;
+    content: '';
     display: block;
-    width: 33px;
-    height: 24px;
-    color: #222;
+    background-color: #222;
     font-size: 3.1rem;
     font-weight: 400;
     cursor: pointer;
   }
+  &::after{
+    position: absolute;
+    top: -20px;
+    right: -23px;
+    width: 10px;
+    height: 2px;
+    content: '';
+    display: block;
+    background-color: #222;
+    font-size: 3.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform .1s ease-in;
+    transform: rotate(90deg);
+  }
 }
 
 .filter .filter__title-open-list.open-state{
-  &::before{
-    content: '-';
-    font-size: 5.9rem;
-    top: -44px;
-    right: -20px;
+  &::after{
+    transform: rotate(0deg);
   }
 }
 .filter__option-item .filter__option-link .hidden-items-control{
@@ -87,8 +102,6 @@
     right: -23px;
     content: '\f107';
     display: block;
-    width: 33px;
-    height: 24px;
     color: #222;
     font-size: 1rem;
     font-family: 'Font Awesome 5 Pro';
@@ -167,31 +180,80 @@
     color: #222;
   }
 }
-.noUi-tooltip{
-  display: none;
+.filter--price .filter__options-list{
+  margin-top: 25px;
 }
-.noUi-active .noUi-tooltip{
-  display: block;
+.filter__price-filter{
+  padding: 0 10px;
 }
-.noUi-horizontal .noUi-origin{
+.noUi-target{
+  background: #ccc;
+  border: none;
+  border-radius: 100px;
+  box-shadow: none;
+  height: 2px;
 }
 .noUi-connect{
   background: #999;
-  margin-top: 10px;
-  height: 3px;
 }
-// .noUi-horizontal .noUi-handle {
-//   width: 1.2rem;
-//   height: 1.2rem;
-//   background: #26b;
-// }
+.noUi-handle::after,
+.noUi-handle::before{
+  display: none;
+}
 .noUi-horizontal .noUi-handle{
-  top: 3px;
-  right: -4px;
-  width: 14px;
-  height: 14px;
-  background-color: #26b;
-  border-radius: 50%;
-  border: none;
+  top: -10px;
   box-shadow: none;
+  outline: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: #26b;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.noUi-handle-lower{
+  left: 2px;
+}
+// .noUi-tooltip{
+//   display: none;
+// }
+// .noUi-active .noUi-tooltip{
+//   display: block;
+// }
+// .noUi-handle-lower{
+
+// }
+// .noUi-horizontal .noUi-origin{
+// }
+// .noUi-connects{
+//   position: relative;
+//   background-color: #fff;
+//   border: none;
+//   height: 10px;
+// }
+// .noUi-connect{
+//   background: #999;
+//   margin-top: 8px;
+//   height: 3px;
+//   z-index: 10;
+// }
+// // .noUi-horizontal .noUi-handle {
+// //   width: 1.2rem;
+// //   height: 1.2rem;
+// //   background: #26b;
+// // }
+// .noUi-horizontal .noUi-handle{
+//   top: 3px;
+//   right: -10px;
+//   width: 14px;
+//   height: 14px;
+//   background-color: #26b;
+//   border-radius: 50%;
+//   border: none;
+//   box-shadow: none;
+// }
+
+@media only screen and (min-width: 993px){
+  .filter__option-item .filter__option-link .hidden-items-control{
+    right: 30px;
+  }
 }

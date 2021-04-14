@@ -1,10 +1,12 @@
-
+.policy-item{
+  padding-bottom: 25px;
+}
 .policy-item__text{
   margin-bottom: 5px;
   padding-left: 15px;
   line-height: 1.85;
   font-family: "Open Sans",sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: justify;
 }
 .policy-item ul li{
@@ -17,7 +19,32 @@
 .policy-item ul{
   padding-left: 40px;
 }
-.page-title--policy{
+h1.page-title--policy{
   margin-bottom: 20px;
   text-align: center;
+  font-size: 2rem;
+  color: #222;
+  line-height: 1.7;
+}
+h4.policy-item__title{
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 1.6rem;
+  color: #222;
+}
+@media only screen and (min-width: 769px)
+{
+  h1.page-title--policy{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .policy-item__text{
+    margin-bottom: 5px;
+    padding-left: 15px;
+    line-height: 1.85;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.7rem;
+    text-align: justify;
+  }
 }

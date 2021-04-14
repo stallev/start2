@@ -28,12 +28,21 @@
   opacity: 0;
   background-color: #222;
   transition: visibility .4s,opacity .4s;
-  z-index: 120;
+  z-index: 99;
 }
+
 body.sidebar-active .catalog-sidebar__content{
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
+  z-index: 100;
+}
+.catalog-sidebar__icon-close-wrap{
+  display: none;
+}
+body.sidebar-active .catalog-sidebar__icon-close-wrap{
+  display: block;
+  z-index: 100;
 }
 body.sidebar-active .catalog-sidebar__overlay{
   opacity: .8;
@@ -43,10 +52,17 @@ body.sidebar-active .catalog-sidebar__overlay{
   margin-left: -25%;
   height: 0;
 }
+
 .closed-left-sidebar+.products-list__wrap--catalog{
   max-width: 100%;
   flex-basis: 100%;
 }
+.catalog-sidebar__icon-close-wrap{
+  position: fixed;
+  top: 15px;
+  left: calc(100vw - 9px);
+  cursor: pointer;
+  }
 .catalog-sidebar__header{
   display: flex;
   justify-content: space-between;
@@ -58,7 +74,8 @@ body.sidebar-active .catalog-sidebar__overlay{
     color: #26b;
   }
 }
-.catalog-sidebar__close{
+.catalog-sidebar__toggle,
+.catalog-sidebar__open{
   position: relative;
   padding: 10px 25px 10px 10px;
   border: 2px solid #26b;
@@ -86,20 +103,28 @@ body.sidebar-active .catalog-sidebar__overlay{
     color: #fff;
   }
 }
-.catalog-sidebar__close:hover::before{
+.catalog-sidebar__toggle:hover::before,
+.catalog-sidebar__open:hover::before{
   color: #fff;
 }
 .catalog-sidebar__clear-all{
   font-size: 1.4rem;
   cursor: pointer;
 }
+@media only screen and (min-width: 576px){
+  .catalog-sidebar__icon-close-wrap{
+  position: fixed;
+  top: 15px;
+  left: calc(100vw - 11px);
+  cursor: pointer;
+  }
+}
 
 @media only screen and (min-width: 993px){
   .catalog-sidebar__content{
     position: relative;
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
+    padding: 0 13px;
+    width: auto;
     transform: translateX(0);
     overflow: auto;
     background-color: #fff;
@@ -108,11 +133,16 @@ body.sidebar-active .catalog-sidebar__overlay{
     transition: transform .4s,opacity .4s;
     z-index: 10;
   }
-  .closed-left-sidebar .catalog-sidebar__close{
-    position: absolute;
-    left: calc(100% + 30px);
+  //скрыть кнопку возвращения левого сайдбара
+  .products-list__controls-list .catalog-sidebar__toggle{
+    display: none;
   }
-  .closed-left-sidebar+.products-list__wrap--catalog .products-list__controls-list{
-    padding-left: 40px;
-  }
+  // .closed-left-sidebar .catalog-sidebar__close{
+  //   position: absolute;
+  //   left: calc(100% + 30px);
+  //   top: 21px;
+  // }
+  // .closed-left-sidebar+.products-list__wrap--catalog .products-list__controls-list{
+  //   margin-left: 80px;
+  // }
 }

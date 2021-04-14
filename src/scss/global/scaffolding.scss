@@ -13,6 +13,9 @@ div, p, ul, article, li, a, span, h1, h2, h3, h4, h5{
 figure{
   margin: 0;
 }
+.row{
+  margin-left: -15px;
+}
 a{
   text-decoration: none;
   color: inherit;
@@ -48,4 +51,7 @@ h1, h2, h3, h4, h5{
 .hidden-items{
   transition: all .4s ease-in-out;
   display: none;
+}
+select, button, input, textarea{
+  outline: 0;
 }

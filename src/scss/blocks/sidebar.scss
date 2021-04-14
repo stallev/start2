@@ -131,6 +131,8 @@ body.sidebar-active .sidebar__icon-close-wrap{
     left: calc(100% + 30px);
   }
   .closed-left-sidebar+.products-list__wrap--catalog .products-list__controls-list{
-    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

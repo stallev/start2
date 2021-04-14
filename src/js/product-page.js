@@ -28,15 +28,25 @@ if($('.product__thumb-slider')){
     slidesToScroll: 1,               
     dots: false,
     infinite: true,
-    prevArrow:'<button class="slick-prev"></button>',
-    nextArrow:'<button class="slick-next"></button>',
+    prevArrow:'<button class="thumb-slider-prev"><i class="far fa-angle-left"></i></button>',
+    nextArrow:'<button class="thumb-slider-next"><i class="far fa-angle-right"></i></button>',
     asNavFor: '.product__main-slider',
     focusOnSelect: true,
     centerMode: false,
-    vertical: true,
+    //vertical: true,
     responsive:[
       {
         breakpoint: 993,
+        settings:{
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          infinite: true,
+          vertical: false,
+        }
+      },
+      {
+        breakpoint: 769,
         settings:{
           slidesToShow: 4,
           slidesToScroll: 1,
@@ -58,6 +68,44 @@ if($('.product__thumb-slider')){
     ]
   });
 }
+
+//малый слайдер в быстром просмотре
+if($('.product__thumb-slider--quickview')){
+  $('.product__thumb-slider--quickview').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,               
+    dots: false,
+    infinite: true,
+    prevArrow:'<button class="thumb-slider-prev"><i class="far fa-angle-left"></i></button>',
+    nextArrow:'<button class="thumb-slider-next"><i class="far fa-angle-right"></i></button>',
+    asNavFor: '.product__main-slider',
+    focusOnSelect: true,
+    centerMode: false,
+    responsive:[
+      {
+        breakpoint: 993,
+        settings:{
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          infinite: true,
+          vertical: false,
+        }
+      },
+      {
+        breakpoint: 577,
+        settings:{
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          infinite: true,
+          vertical: false,
+        }
+      }
+    ]
+  });
+}
+
 //панель product-info
 
 let productNavTabLinks = document.querySelectorAll('.product__info-nav-link');
@@ -112,7 +160,26 @@ if(countBox){
           countField.value = countStr;
         }
       });
-      console.log(countValue);
     }
   )
+}
+
+//быстрый просмотр
+let quickviewBtns = document.querySelectorAll('.product-card__quick-view');
+let quickviewCloseBtn = document.querySelector('.product-quickview__icon-close-wrap');
+
+if(quickviewBtns){
+  quickviewBtns.forEach(
+    btn => {
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        document.body.classList.add('quickview');
+      })
+    }
+  )
+}
+if(quickviewCloseBtn){
+  quickviewCloseBtn.addEventListener('click', function(){
+    document.body.classList.remove('quickview');
+  });
 }

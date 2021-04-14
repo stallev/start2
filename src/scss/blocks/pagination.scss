@@ -1,9 +1,11 @@
 .pagination{
   padding: 25px 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   &__display{
+    margin-bottom: 15px;
     font-size: 1.4rem;
     color: #ccc;
     & span{
@@ -53,5 +55,13 @@
   }
   &--catalog{
     
+  }
+}
+@media only screen and (min-width: 576px){
+  .pagination{
+    flex-direction: row;
+    &__display{
+      margin-bottom: 0;
+    }
   }
 }

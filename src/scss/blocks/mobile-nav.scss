@@ -33,9 +33,10 @@
 .mobile-nav__icon-close-wrap{
   position: fixed;
   top: 15px;
-  left: calc(100vw - 30px);
+  left: calc(100vw + 3px);
   cursor: pointer;
 }
+.catalog-sidebar__icon-close,
 .mobile-nav__icon-close{
   position: relative;
   display: block;
@@ -48,7 +49,7 @@
     content: '';
     top: 10px;
     right: 10px;
-    width: 30px;
+    width: 20px;
     height: 2px;
     background-color: rgb(231, 227, 227);
   }

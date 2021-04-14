@@ -1,5 +1,5 @@
 
-//стилизация слайдера на главной
+//стилизация горизонтальных слайдеров 
 .bestseller-slider{
   &__slick-dots{
     position: absolute;
@@ -27,6 +27,39 @@
       }
     }
   }
+}
+.bestseller-prev,
+.bestseller-next{
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 30px;
+  top: 0; 
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #333;
+  border-radius: 0;
+  background-color: rgba(255,255,255,0);
+  transition: all .4s;
+  opacity: .2;
+  z-index: 10;
+  & i{
+    position: absolute;
+    @include absoluteAllCenter;
+  }
+}
+.bestseller-prev{
+  left: 0;
+  box-shadow:4px 0 7px -5px rgba(0,0,0,0)
+}
+.bestseller-next{
+  right: 0;
+  box-shadow:-4px 0 7px -5px rgba(0,0,0,0)
+}
+.products-list__inner:hover .bestseller-prev,
+.products-list__inner:hover .bestseller-next{
+  background-color: rgba(255,255,255,.8);
+  opacity: 1;
 }
 .products-list__inner {
   & .slick-slide {
@@ -58,12 +91,19 @@
     background-color: #f6f7f9;
   }
   &__controls{
-    padding: 20px 15px;
+    padding: 20px 0;
   }
   &__controls-list{
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
+    width: 100%;  
+  }
+  &__controls-items-list{
+    display: flex;
+    & label{
+      margin-right: 10px;
+    }
   }
   &__controls-filters{
     display: inline-block;
@@ -79,11 +119,9 @@
       color: #fff;
     }
   }
+  
   &__controls label{
-    display: inline-block;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    display: none;
   }
   &__controls-select{
     padding: 9px 9px 9px 7px;
@@ -96,31 +134,15 @@
     z-index: 1;
     cursor: pointer;
   }
-  &__controls-change-grid{
-    display: inline-block;
-    padding: 0 10px;
-    & span{
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-      width: 1px;
-      height: 1px;
-      margin-right: 25px;
-      &::before{
-        position: absolute;
-        display: block;
-        content: '';
-        background-repeat: no-repeat;
-        top: -10px;
-        width: 25px;
-        height: 18px;
-      }
-    }
+  &__controls-right-item{
+    display: none;
   }
   &__controls-to-grid::before{
+    top: -10px;
     background-image: url(../img/decor/bkg_grid-inactive.png);
   }
   &__controls-to-column::before{
+    top: -8px;
     background-image: url(../img/decor/to-grid-inactive.png);
   }
 }
@@ -132,4 +154,71 @@
 }
 .products-list--catalog .product-card{
   margin-bottom: 20px;
+}
+//изменяем представление карточек в каталоге с табличного на строчный вид и обратно
+
+
+
+@media only screen and (min-width: 576px){
+  .products-list{
+    &__controls{
+      padding: 20px 15px;
+      display: flex;
+      & label{
+        display: inline-block;
+      font-weight: 700;
+      text-transform: uppercase;
+        font-size: 1.3rem;
+      }
+    }
+    &__controls-show{
+      display: block;
+    }
+    &__controls-list{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__controls-left-item{
+      margin-right: 25px;
+    }
+    &__controls-left-item,
+    &__controls-right-item{
+      display: flex;
+      align-items: center;
+    }
+    
+    &__controls-left-item select{
+      max-width: 120px;
+    }
+    &__controls-change-grid{
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 769px){
+  .products-list{
+    &__controls-change-grid{
+      display: inline-block;
+      padding: 0 10px;
+      & span{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        width: 1px;
+        height: 1px;
+        margin-right: 25px;
+        &::before{
+          position: absolute;
+          display: block;
+          content: '';
+          background-repeat: no-repeat;
+          width: 25px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 993px){
+  .products-list{}
 }

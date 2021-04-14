@@ -68,7 +68,6 @@ if(hiddenItemsControls){
 				e.preventDefault();
 				e.target.classList.toggle('open-state');
 				let sublist = e.target.closest('.sublist-title').nextSibling.nextElementSibling;
-				console.log(sublist);
 				sublist.classList.toggle('hidden-items');
 			})
 		}
