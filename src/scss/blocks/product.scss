@@ -52,7 +52,6 @@
   }
   &__price{
     display: inline-block;
-    margin-bottom: 1.3rem;
     color: #d26e4b;
     font-size: 3rem;
     font-weight: 700;
@@ -86,7 +85,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   &__variation-text{
     font-size: 1.2rem;
@@ -97,8 +96,8 @@
   &__count-block{
     display: flex;
     flex-direction: column;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
   }
   &__count-block-add-to-basket{
@@ -213,7 +212,8 @@
   display: block;
 }
 //стили для стрелок на главном слайдере
-.product__main-slider{
+.product__main-slider,
+.product__main-slider--quickview{
   position: relative;
   & .slick-prev{
     left: 10%;
@@ -235,7 +235,8 @@
     opacity: 0;
     visibility: hidden;
     transition: all .4s ease-in-out;
-    @include absoluteYCenter;
+    top: calc(50% - 15px);
+    transform: translate(0, -50%);
     &:hover{
       &::before{
         background-color: #26b;
@@ -246,11 +247,11 @@
       position: absolute;
       display: block;
       border-radius: 50%;
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
       text-align: center;
       font-family: "Font Awesome 5 Pro";
-      font-size: 2.3rem;
+      font-size: 1.9rem;
       font-weight: 400;
       color: #222;
       transition: all .4s ease-in-out;
@@ -336,12 +337,13 @@
     font-size: 1.4rem;
   }
 }
-@media only screen and (min-width: 500px){
+
+@media only screen and (min-width: 435px){
   .product__count-block{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 0;
+    padding: 15px 0;
     & .count-box__input-group{
       height: 3.5rem;
       margin-bottom: 0;
@@ -359,7 +361,7 @@
   .product{
     &__title{
       font-size: 2.6rem;
-      line-height: 1.8;
+      line-height: 1.4;
     }
     &__variation-text{
       font-size: 1.4rem;

@@ -14,6 +14,7 @@ if(filtrsTogggleBtns&&leftCatalogSidebar){
         e.preventDefault();
         if(document.documentElement.clientWidth<993){
           document.querySelector('body').classList.toggle('sidebar-active');
+          returnSidebarBtn.style.display = 'inline-block';
         }
         else{
           leftCatalogSidebar.classList.toggle('closed-left-sidebar');
@@ -82,6 +83,8 @@ if(productList&&productListViewControls){
   
   if(gridViewBtn){
     gridViewBtn.addEventListener('click', function(e){
+      gridViewBtn.classList.add('products-list__controls-to-grid--active');
+      columnViewBtn.classList.remove('products-list__controls-to-column--active');
       productList.classList.remove('products-list--catalog-column');
       productList.classList.add('products-list--catalog-grid');
       productCards.forEach(
@@ -94,6 +97,8 @@ if(productList&&productListViewControls){
       );
     });
     columnViewBtn.addEventListener('click', function(e){
+      columnViewBtn.classList.add('products-list__controls-to-column--active');
+      gridViewBtn.classList.remove('products-list__controls-to-grid--active');
       productList.classList.remove('products-list--catalog-grid');
       productList.classList.add('products-list--catalog-column');
       productCards.forEach(
@@ -123,10 +128,26 @@ function getExcerpt( str, limit ){
     return returnString;
 }
 let excerptsDescr = document.querySelectorAll('.excerpt-descr');
+let excerptCatalogCartTitle = document.querySelectorAll('.excerpt-catalog-cart-title');
+let blogItemExcerpt = document.querySelectorAll('.blog-item__excerpt');
 if(excerptsDescr){
   excerptsDescr.forEach(
     item => {
       item.innerHTML = getExcerpt( item.innerHTML, 180 ).shortText;
+    }
+  );
+}
+if(excerptCatalogCartTitle){
+  excerptCatalogCartTitle.forEach(
+    item => {
+      item.innerHTML = getExcerpt( item.innerHTML, 120 ).shortText;
+    }
+  );
+}
+if(blogItemExcerpt){
+  blogItemExcerpt.forEach(
+    item => {
+      item.innerHTML = getExcerpt( item.innerHTML, 100 ).shortText;
     }
   );
 }

@@ -68,6 +68,12 @@
 .quickview .product-quickview__wrap{
   visibility: visible;
 }
+.quickview .product__title{
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  @include colorOnHover;
+}
 .quickview .product-quickview__content{
   top: 4vh;
   margin-right: -50%;
@@ -79,7 +85,7 @@
 }
 .quickview .product__count-block{
   flex-direction: column;
-  padding-bottom: 0;
+  padding-bottom: 20px;
 }
 .quickview .count-box__input-group{
   margin-bottom: 0px;
@@ -88,25 +94,27 @@
   height: 3.5rem;
 }
 .quickview .product__variation--count{
-  width: 100%;
   justify-content: space-between;
 }
 .quickview .product__count-block-add-to-basket{
   align-self: flex-end;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   & i{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
-
+@media only screen and (min-width: 435px){
+  .quickview .product__count-block{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 @media only screen and (min-width: 576px){
   .quickview .product__count-block{
-    flex-direction: column;
-    padding-bottom: 0;
   }
   .quickview .product__variation--count{
-    width: 100%;
     justify-content: space-between;
   }
   .quickview .product__count-block-add-to-basket{
@@ -134,7 +142,7 @@
   }
   .quickview .product__count-block{
     flex-direction: column;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
   .quickview .product__variation--count{
     width: 100%;

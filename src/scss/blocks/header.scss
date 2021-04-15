@@ -71,19 +71,19 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity .3s ease-in-out;
-		top: 40px;
+		top: 45px;
     right: -1px;
-		padding: 15px;
+		padding: 20px;
 		background-color: #fff;
 		pointer-events: none;
-		box-shadow: 5px 5px 15px 7px #B7B7B7;
+		box-shadow:0 2px 35px rgba(0,0,0,0.1);
 		&::before{
 			position: absolute;
 			display: block;
 			content: '';
 			width: 0;
 			height: 0;
-			top: -13px;
+			top: -12px;
 			right: 12px;
 			border-style: solid;
 			border-width: 0 10px 12px 10px;

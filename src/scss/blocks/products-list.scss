@@ -146,10 +146,12 @@
     background-image: url(../img/decor/to-grid-inactive.png);
   }
 }
-.products-list__controls-to-grid:hover::before{
+.products-list__controls-to-grid:hover::before,
+.products-list__controls-to-grid--active::before{
   background-image: url(../img/decor/bkg_grid.png);
 }
-.products-list__controls-to-column:hover::before{
+.products-list__controls-to-column:hover::before,
+.products-list__controls-to-column--active::before{
   background-image: url(../img/decor/to-grid.png);
 }
 .products-list--catalog .product-card{
@@ -176,7 +178,8 @@
     }
     &__controls-list{
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
+      margin-left: auto;
     }
     &__controls-left-item{
       margin-right: 25px;
