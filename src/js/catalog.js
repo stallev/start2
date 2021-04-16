@@ -147,7 +147,7 @@ if(excerptCatalogCartTitle){
 if(blogItemExcerpt){
   blogItemExcerpt.forEach(
     item => {
-      item.innerHTML = getExcerpt( item.innerHTML, 100 ).shortText;
+      item.innerHTML = getExcerpt( item.innerHTML, 80 ).shortText;
     }
   );
 }

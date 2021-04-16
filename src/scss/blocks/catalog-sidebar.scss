@@ -112,6 +112,9 @@ body.sidebar-active .catalog-sidebar__overlay{
   cursor: pointer;
 }
 @media only screen and (min-width: 576px){
+  // .catalog-sidebar__header .catalog-sidebar__toggle{
+  //   margin-right: auto;
+  // }
   .catalog-sidebar__icon-close-wrap{
   position: fixed;
   top: 15px;

@@ -117,6 +117,7 @@
     font-size: 1.4rem;
     line-height: 1.7;
     font-weight: 400;
+    color: #222;
   }
   &__price{
     font-size: 1.5rem;
@@ -128,6 +129,7 @@
   &__current-price{
     margin-right: 10px;
     text-decoration: none;
+    color: #222;
   }
   &__last-price{
     color: #ccc;
@@ -138,6 +140,7 @@
   }
   &__rating{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0 5px;
   }

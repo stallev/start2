@@ -1,46 +1,49 @@
 .promo-slider{
   position: relative;
   &__item{
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 300px;
+    box-shadow: inset 13vw 28vh 22vw 6vh rgba(0,0,0,.7);
+    
   }
   &__item-content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 10vw;
-    padding-top: 25vh;
-    padding-bottom: 10vh;
-    padding-right: 10vw;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   &__item-title{
-    margin-bottom: 20px;
+    margin-bottom: 3.7vw;
     text-align: left;
-    font-size: 2.8rem;
+    font-size: 4.5vw;
     font-weight: 700;
     max-width: 400px;
     &--1{
-      color: #fff;
+      color: #0072ff;
     }
     &--2{
       color: #fff;
     }
     &--3{
-      color: red;
+      color: #ff0000;
     }
   }
   &__item-descr{
-    margin-bottom: 30px;
-    font-size: 1.9rem;
+    margin-bottom: 3.7vw;
+    font-size: 3.7vw;
     line-height: 1.2;
     color: rgb(3, 1, 0);
     max-width: 800px;
     font-weight: 700;
     &--1{
-      color: #222;
+      color: #fff;
     }
     &--2{
-      color: #fff;
+      color: #ff0000;
     }
     &--3{
       color: #fff;
@@ -62,13 +65,70 @@
       min-width: none;
       width: 1.5vh;
       height: 1.5vh;
-      background-color: rgb(250, 250, 250);
-      border: 1px solid grey;
+      background-color: gray;
+      border: 1px solid #fff;
       border-radius: 50%;
     }
   }
+  & .action--promoslide{
+    border-radius: 3px;
+    font-size: 2.8vw;
+    background-color: #26b;
+    color: #fff;
+    transition: background-color .4s ease-in-out;
+    &:hover{
+      background-color: rgb(59, 143, 245);
+    }
+  }
+}
+.promo-slider__wrap .slick-track{
+  display: flex;
 }
 .promo-slider__slick-dots .slick-active button{
-  background-color: grey;
+  background-color: #fff;
 }
-@media only screen and (min-width: 993px){}
+@media only screen and (min-width: 576px){
+  .promo-slider{
+    &__item{
+      height: 500px;
+    }
+    &__item-title{
+      max-width: 70vw;
+      margin-bottom: 20px;
+      font-size: 3.4rem;
+    }
+    &__item-descr{
+      bottom: 30px;
+      font-size: 2.4rem;
+    }
+    & .action--promoslide{
+      font-size: 2rem;
+    }
+  }
+}
+@media only screen and (min-width: 769px){
+  .promo-slider{
+    &__item{
+      height: 500px;
+    }
+    &__item-title{
+      font-size: 5rem;
+    }
+    &__item-descr{
+      font-size: 2.6rem;
+    }
+  }
+}
+@media only screen and (min-width: 993px){
+  .promo-slider{
+    &__item{
+      height: 600px;
+    }
+    &__item-title{
+      font-size: 5.7rem;
+    }
+    &__item-descr{
+      font-size: 2.8rem;
+    }
+  }
+}

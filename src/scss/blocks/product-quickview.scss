@@ -20,7 +20,7 @@
 }
 .product-quickview__icon-close-wrap{
   position: fixed;
-  top: 15px;
+  top: 4px;
   left: calc(100vw - 23px);
   cursor: pointer;
 }
@@ -85,7 +85,7 @@
 }
 .quickview .product__count-block{
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .quickview .count-box__input-group{
   margin-bottom: 0px;
@@ -142,13 +142,13 @@
   }
   .quickview .product__count-block{
     flex-direction: column;
-    padding-bottom: 20px;
   }
   .quickview .product__variation--count{
     width: 100%;
     justify-content: space-between;
   }
   .quickview .product__count-block-add-to-basket{
+    margin-top: 15px;
     align-self: flex-end;
     padding: 10px;
     font-size: 1.1rem;

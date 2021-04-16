@@ -9,8 +9,7 @@
     font-size: 1.4rem;
     color: #ccc;
     & span{
-      color: #222;
-      font-size: 1.6rem;
+      
     }
   }
   &__list{
@@ -29,6 +28,17 @@
     display: block;
     padding: 3px 7px;
     font-size: 1.9rem;
+    display: inline-block;
+    border: 1px solid transparent;
+    color: #222;
+    font-size: 1.9rem;
+    @include colorOnHover;
+    &:hover{
+      border-color: #222;
+    }
+  }
+  &__item--empty{
+    border: none;
   }
   &__control{
     display: block;

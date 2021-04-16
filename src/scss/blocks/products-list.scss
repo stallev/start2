@@ -142,8 +142,9 @@
     background-image: url(../img/decor/bkg_grid-inactive.png);
   }
   &__controls-to-column::before{
-    top: -8px;
+    top: -10px;
     background-image: url(../img/decor/to-grid-inactive.png);
+    background-size: 95%;
   }
 }
 .products-list__controls-to-grid:hover::before,
@@ -178,8 +179,13 @@
     }
     &__controls-list{
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       margin-left: auto;
+    }
+    &__controls-items-list{
+      flex-grow: 2;
+      justify-content: space-between;
+      margin-left: 10px;
     }
     &__controls-left-item{
       margin-right: 25px;
@@ -223,5 +229,9 @@
   }
 }
 @media only screen and (min-width: 993px){
-  .products-list{}
+  .products-list{
+    &__controls-list{
+      justify-content: flex-end;
+    }
+  }
 }

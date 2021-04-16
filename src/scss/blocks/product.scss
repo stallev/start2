@@ -85,7 +85,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   &__variation-text{
     font-size: 1.2rem;
@@ -247,8 +247,8 @@
       position: absolute;
       display: block;
       border-radius: 50%;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       text-align: center;
       font-family: "Font Awesome 5 Pro";
       font-size: 1.9rem;
@@ -400,6 +400,10 @@
   }
   .quickview .product__sliders{
     flex-direction: column;
+  }
+  .product__main-slider .slick-next,
+  .product__main-slider--quickview .slick-next{
+    right: 12%;
   }
   .product__main-slider .slick-next::before{
     right: 20%;

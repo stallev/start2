@@ -42,6 +42,9 @@ if($('.advantages__slider-wrap')){
         }
       }
     ]
+  })
+  .on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
   });
 }
 //слайдер в секции "Лидеры продаж"

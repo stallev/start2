@@ -20,6 +20,12 @@
 .container--popular{
   padding-bottom: 40px;
 }
+.container--promo-slide{
+  height: 100%;
+  display: flex;
+  z-index: 20;
+  background-color: transparent;
+}
 .container--adv-online,
 .container--brands,
 .container--blog-section{

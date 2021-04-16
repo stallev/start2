@@ -208,3 +208,17 @@ if(quickviewCloseBtn){
     document.body.classList.remove('quickview');
   });
 }
+
+// let zoomingImages = document.querySelectorAll('.zoom');
+// if(zoomingImages){
+//   zoomingImages.forEach(
+//     image => {
+//       image.elevateZoom();
+//     }
+//   )
+// }
+$('#zoom1').elevateZoom();
+$('#zoom2').elevateZoom();
+$('#zoom3').elevateZoom();
+$('#zoom4').elevateZoom();
+$('#zoom5').elevateZoom();

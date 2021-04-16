@@ -17,6 +17,7 @@
       margin-bottom: 20px;
       font-size: 1.8rem;
       font-weight: 700;
+      color: #222;
     }
     &-header-descr{
       margin-bottom: 20px;
@@ -49,4 +50,11 @@
     }
   }
 }
-@media only screen and (min-width: 993px){}
+@media only screen and (min-width: 769px){
+  .about__content .row{
+    flex-direction: row-reverse;
+  }
+  .about__item--info{
+    padding-top: 25px;
+  }
+}
