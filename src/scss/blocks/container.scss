@@ -12,7 +12,7 @@
 .container--header{
   position: relative;
   display: flex;
-  padding: 0px 30px;
+  padding: 0px 15px;
   align-items: center;
   justify-content: space-between;
   min-height: 70px;
@@ -47,7 +47,7 @@
 }
 .container--team{
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 0;
 }
 .container-fluid--checkout{
   padding-left: 40px;
@@ -71,7 +71,7 @@
     max-width: 1220px;
   }
   .container--header{
-		padding: 0px 30px;
+		padding: 0px 15px;
 		align-items: center;
 		justify-content: space-between;
 		min-height: 70px;
@@ -95,7 +95,7 @@
   }
   .container--team{
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
   .container--policy{
     padding-top: 30px;

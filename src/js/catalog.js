@@ -6,7 +6,7 @@ let filtrsTogggleBtns = document.querySelectorAll('.catalog-sidebar__toggle');
 let closeSidebarBtn = document.querySelector('.catalog-sidebar__icon-close-wrap');
 let leftCatalogSidebar = document.querySelector('.catalog-sidebar');
 let returnSidebarBtn = document.getElementById('return-sidebar');
-
+let catalogSidebarOverlay = document.querySelector('.catalog-sidebar__overlay');
 if(filtrsTogggleBtns&&leftCatalogSidebar){
   filtrsTogggleBtns.forEach(
     filtrsTogggleBtn => {
@@ -34,7 +34,11 @@ if(filtrsTogggleBtns&&leftCatalogSidebar){
     });
   }
 }
-
+if(catalogSidebarOverlay){
+  catalogSidebarOverlay.addEventListener('click',  function (e) {
+    document.querySelector('body').classList.toggle('sidebar-active');
+  });
+}
 //изменяем чекбоксы в фильтре
 let chkboxFilterLinks = document.querySelectorAll('.filter__options-list--chkbox .filter__option-link');
 if(chkboxFilterLinks){
@@ -130,6 +134,7 @@ function getExcerpt( str, limit ){
 let excerptsDescr = document.querySelectorAll('.excerpt-descr');
 let excerptCatalogCartTitle = document.querySelectorAll('.excerpt-catalog-cart-title');
 let blogItemExcerpt = document.querySelectorAll('.blog-item__excerpt');
+let excerptAsideCatalogCartTitle = document.querySelectorAll('.aside-cart-title__excerpt');
 if(excerptsDescr){
   excerptsDescr.forEach(
     item => {
@@ -148,6 +153,14 @@ if(blogItemExcerpt){
   blogItemExcerpt.forEach(
     item => {
       item.innerHTML = getExcerpt( item.innerHTML, 80 ).shortText;
+    }
+  );
+}
+if(excerptAsideCatalogCartTitle){
+  console.log(excerptAsideCatalogCartTitle);
+  excerptAsideCatalogCartTitle.forEach(
+    item => {
+      item.innerHTML = getExcerpt( item.innerHTML, 60 ).shortText;
     }
   );
 }

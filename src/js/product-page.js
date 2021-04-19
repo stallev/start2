@@ -217,8 +217,14 @@ if(quickviewCloseBtn){
 //     }
 //   )
 // }
-$('#zoom1').elevateZoom();
-$('#zoom2').elevateZoom();
-$('#zoom3').elevateZoom();
-$('#zoom4').elevateZoom();
-$('#zoom5').elevateZoom();
+// $('#zoom1').elevateZoom();
+// $('#zoom2').elevateZoom();
+// $('#zoom3').elevateZoom();
+// $('#zoom4').elevateZoom();
+// $('#zoom5').elevateZoom();
+if($('.zoom__img')){
+  $('.zoom__img').each(function(){
+    $(this).elevateZoom(
+    );
+  });
+}

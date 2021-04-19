@@ -8,6 +8,9 @@
   &__bottom{
     padding-bottom: 30px;
   }
+  &__main-slider{
+    overflow-x: hidden;
+  }
   &__main-slider-img{
     display: block;
     width: 100%;
@@ -297,18 +300,6 @@
   opacity: 1;
 }
 
-// #product__info-descr{
-//   background-color: orange;
-// }
-// #product__info-additional{
-//   background-color: green;
-// }
-// #product__info-shipping{
-//   background-color: rgb(17, 47, 218);
-// }
-// #product__info-reviews{
-//   background-color: rgb(248, 235, 54);
-// }
 //стили звездочек
 .product__top {
   & .rating-mini__item{
@@ -366,6 +357,10 @@
     &__variation-text{
       font-size: 1.4rem;
     }
+    &__bottom{
+      padding-top: 15px;
+      padding-bottom: 0;
+    }
   }
 }
 @media only screen and (min-width: 769px){
@@ -390,6 +385,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+    }
+    &__bottom{
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -424,6 +423,10 @@
     }
     &__count-block-add-to-basket{
       margin-top: 0;
+    }
+    &__bottom{
+      padding-top: 20px;
+      padding-bottom: 0;
     }
   }
   .quickview .product{

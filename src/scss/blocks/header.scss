@@ -5,7 +5,7 @@
 	width: 100%;
 	z-index: 20;
 	background-color: #fff;
-	padding-bottom: 20px;
+	padding: 10px 0;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 	&__menu-icon-wrap{
 		width: 30px;
@@ -17,13 +17,13 @@
 		display: block;
 		cursor: pointer;
 		width: 30px;
-		height: 3px;
+		height: 4px;
 		background-color: #000;
 		&::after{
 			position: absolute;
 			display: block;
 			content: '';
-			top: 9px;
+			top: 10px;
 			left: 0;
 			width: 30px;
 			height: 4px;
@@ -33,7 +33,7 @@
 			position: absolute;
 			display: block;
 			content: '';
-			top: 19px;
+			top: 20px;
 			left: 0;
 			width: 30px;
 			height: 4px;
@@ -61,10 +61,17 @@
 	}
 	&__srch-icon{
 		position: relative;
-		font-size: 2.5rem;
 		padding: 13px 20px;
 	}
-	
+	&__srch-icon-image{
+		position: relative;
+		display: block;
+		fill: #222932;
+		transition: fill .4s ease-in;
+		&:hover{
+			fill: #26b;
+		}
+	}
 	&__srch-wdg-inner{
 		position: absolute;
 		display: block;
@@ -72,7 +79,7 @@
 		visibility: hidden;
 		transition: opacity .3s ease-in-out;
 		top: 45px;
-    right: -1px;
+    right: -12px;
 		padding: 20px;
 		background-color: #fff;
 		pointer-events: none;
@@ -106,6 +113,9 @@
 		font-size: 1.2rem;
 		color: #fff;
 	}
+	&__srch-wdg-inner-image{
+		fill: #fff;
+	}
 	&__personal-wdg{
 		display: flex;
 	}
@@ -120,7 +130,7 @@
 		display: flex;
 		align-items: center;
 		padding: 20px 0 20px 15px;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		&:hover{
@@ -187,22 +197,6 @@
 .header__menu-icon-wrap._active{
 	z-index: 16;
 }
-// .header__menu-icon-wrap._active .header__menu-icon{
-// 	position: absolute;
-// 	top: 25px;
-// 	right: 25px;
-// 	width: 0;
-// 	height: 0;
-// 	&::after{
-// 		height: 2px;
-// 		transform: rotate(45deg);
-// 	}
-// 	&::before{
-// 		height: 2px;
-// 		top: 9px;
-// 		transform: rotate(-45deg);
-// 	}
-// }
 @media only screen and (min-width: 993px){
 	.header{
 		&__menu-icon-wrap{
@@ -225,8 +219,26 @@
 		}
 		&__srch-icon{
 			position: relative;
+			top: 2px;
 			padding: 13px 0;
-			font-size: 2.5rem;
+			&::before{
+				position: absolute;
+				display: block;
+				content: '';
+				width: 1px;
+				height: 14px;
+				left: -10px;
+				top: 6px;
+				background-color: #ccc;
+			}
+		}
+		&__srch-icon-image{
+			display: block;
+			fill: #222932;
+			transition: fill .4s ease-in;
+			&:hover{
+				fill: #26b;
+			}
 		}
 		&__personal-wdg{
 			display: flex;
@@ -248,7 +260,7 @@
 			}
 			&-text{
 				font-weight: 700;
-				font-size: 1.5rem;
+				font-size: 1.2rem;
 			}
 		}
 		&__cart-dropdown-name,

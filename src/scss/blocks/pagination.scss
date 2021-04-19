@@ -9,7 +9,7 @@
     font-size: 1.4rem;
     color: #ccc;
     & span{
-      
+      color: #222;
     }
   }
   &__list{
@@ -19,23 +19,23 @@
   }
   &__item{
     display: block;
-    margin-right: 15px;
-    &--current{
-      opacity: .5;
-    }
+    margin-right: 7px;
   }
   &__item-link{
     display: block;
     padding: 3px 7px;
-    font-size: 1.9rem;
     display: inline-block;
     border: 1px solid transparent;
     color: #222;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     @include colorOnHover;
     &:hover{
       border-color: #222;
     }
+  }
+  &__item--current a{
+    opacity: .5;
+    border-color: #222;
   }
   &__item--empty{
     border: none;
@@ -43,17 +43,20 @@
   &__control{
     display: block;
     width: fit-content;
-    padding: 4px 13px;
+    padding: 4px 9px;
     text-align: center;
-    background-color: rgb(17,17,17);
-    color: #fff;
+    background-color: #ededed;
+    color: #ccc;
     & i{
-      font-size: 2.9rem;
+      font-size: 2rem;
       font-weight: 100;
+    }
+    &--active{
+      background-color: rgb(17,17,17);
+      color: #fff;
     }
     &--prev{
       margin-right: 25px;
-      display: none;
     }
     &--next{
       margin-left: 10px;

@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
-    box-shadow: inset 13vw 28vh 22vw 6vh rgba(0,0,0,.7);
+    box-shadow: inset 13vw 28vh 22vw 6vh rgba(0,0,0,.8);
     
   }
   &__item-content{
@@ -13,8 +13,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
   }
   &__item-title{
     margin-bottom: 3.7vw;
@@ -65,7 +63,7 @@
       min-width: none;
       width: 1.5vh;
       height: 1.5vh;
-      background-color: gray;
+      background-color: #9f9f9f;
       border: 1px solid #fff;
       border-radius: 50%;
     }
@@ -125,10 +123,24 @@
       height: 600px;
     }
     &__item-title{
-      font-size: 5.7rem;
+      max-width: 400px;
+      font-size: 4.2rem;
     }
     &__item-descr{
-      font-size: 2.8rem;
+      font-size: 2.2rem;
+      font-weight: 400;
+    }
+    & .action--promoslide{
+      border-radius: 3px;
+      font-size: 2rem;
+      background-color: #26b;
+      color: #fff;
+      padding: 18px 36px;
+      transition: background-color .4s ease-in-out;
+      text-transform: none;
+      &:hover{
+        background-color: rgb(59, 143, 245);
+      }
     }
   }
 }
