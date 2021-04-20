@@ -168,7 +168,7 @@
 
 
 
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 575px){
   .products-list{
     &__controls{
       padding: 20px 15px;
@@ -210,7 +210,7 @@
     }
   }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 767px){
   .products-list{
     &__controls-change-grid{
       display: inline-block;
@@ -234,7 +234,7 @@
     }
   }
 }
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 991px){
   .products-list{
     &__controls-list{
       justify-content: flex-end;

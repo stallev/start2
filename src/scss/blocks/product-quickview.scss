@@ -111,7 +111,7 @@
     align-items: center;
   }
 }
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 575px){
   .quickview .product__count-block{
   }
   .quickview .product__variation--count{
@@ -126,7 +126,7 @@
     }
   }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 767px){
   //по центру экрана
   .quickview .product-quickview__content{
     top: 50%;

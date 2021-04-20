@@ -158,7 +158,7 @@
     width: max-content;
   }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 767px){
   .cart--footer{
     display: none;
   }
@@ -166,7 +166,7 @@
     & .cart{}
   }
 }
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 991px){
   .cart{
     left: -177px;
   }

@@ -87,7 +87,7 @@
 .promo-slider__slick-dots .slick-active button{
   background-color: #fff;
 }
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 575px){
   .promo-slider{
     &__item{
       height: 500px;
@@ -106,7 +106,7 @@
     }
   }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 767px){
   .promo-slider{
     &__item{
       height: 500px;
@@ -127,7 +127,7 @@
     }
   }
 }
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 991px){
   .promo-slider{
     &__item{
       height: 600px;

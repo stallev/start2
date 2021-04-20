@@ -351,7 +351,7 @@
     padding: 10px;
   }
 }
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 575px){
   .product{
     &__title{
       font-size: 2.6rem;
@@ -366,7 +366,7 @@
     }
   }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 767px){
   .product-slider{
     padding-top: 23px;
   }
@@ -396,7 +396,7 @@
   }
 }
 
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 991px){
   .product__sliders{
     flex-direction: column;
   }

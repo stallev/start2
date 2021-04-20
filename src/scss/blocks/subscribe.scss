@@ -61,7 +61,7 @@
     }
   }
 }
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 575px){
   .subscribe{
     &__form-block{
       width: 450px;
@@ -69,7 +69,7 @@
     }
   }
 }
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 991px){
   .subscribe{
     display: flex;
     justify-content: space-between;

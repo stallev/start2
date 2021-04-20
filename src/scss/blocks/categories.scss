@@ -49,7 +49,7 @@
 .categories__item:hover .categories__item-img-wrap{
   transform: scale(1.05);
 }
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 575px){
   .categories{
     &__item-title{
       padding: 5px 6px;
@@ -57,7 +57,7 @@
     }
   }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 767px){
   .categories{
     &__list{
       justify-content: space-around;
@@ -75,7 +75,7 @@
     }
   }
 }
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 991px){
   .categories{
     &__item{
       width: 23%;

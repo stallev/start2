@@ -111,7 +111,7 @@ body.sidebar-active .catalog-sidebar__overlay{
   font-size: 1.4rem;
   cursor: pointer;
 }
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 575px){
   // .catalog-sidebar__header .catalog-sidebar__toggle{
   //   margin-right: auto;
   // }
@@ -123,7 +123,7 @@ body.sidebar-active .catalog-sidebar__overlay{
   }
 }
 
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 991px){
   .catalog-sidebar__content{
     position: relative;
     padding: 0 13px;
