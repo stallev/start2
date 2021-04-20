@@ -69,7 +69,7 @@
     top: 15px;
     color: #fff;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 0;
   }
   &__new-mark{
     background-color: #26b;
@@ -190,11 +190,12 @@
 .product-card--new .product-card__new-mark{
   opacity: 1;
   visibility: visible;
-  font-size: 1.1rem;
+  font-size: .8rem;
 }
 .product-card--sale .product-card__sale-mark{
   opacity: 1;
   visibility: visible;
+  font-size: .8rem;
 }
 
 //строковый вид
@@ -298,10 +299,6 @@ div.products-list--catalog-column .product-card{
       align-items: center;
       padding: 0;
     }
-    &__sale-mark,
-    &__new-mark{
-      font-size: 1.1rem;
-    }
     &__title{
       font-size: 1.4rem;
     }
@@ -311,6 +308,10 @@ div.products-list--catalog-column .product-card{
     &__category{
       font-size: 1.1rem;
     }
+  }
+  .product-card--new .product-card__new-mark,
+  .product-card--new .product-card__sale-mark{
+    font-size: 1.1rem;
   }
 }
 @media only screen and (min-width: 575px){
