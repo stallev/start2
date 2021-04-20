@@ -32,9 +32,12 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.container--mail-us,
-.container--about{
+.container--mail-us{
   padding-top: 50px;
+  padding-bottom: 40px;
+}
+.container--about{
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 .container--stores{
@@ -84,9 +87,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .container--mail-us,
-  .container--about{
+  .container--mail-us{
     padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .container--about{
+    padding-top: 40px;
     padding-bottom: 50px;
   }
   .container--testimonials{

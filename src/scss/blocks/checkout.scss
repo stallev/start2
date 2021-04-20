@@ -442,13 +442,22 @@
     margin-bottom: 30px;
     font-size: 1.4rem;
   }
+  &__order-info{
+    margin-bottom: 15px;
+  }
+  &__item--pt0{
+    margin-bottom: 15px;
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 769px){
+  .checkout{
+    
+  }
 }
 @media only screen and (min-width: 993px){
   .checkout{
     &__goods-total{
-      padding-top: 0;
-    }
-    &__item--pt0{
       padding-top: 0;
     }
   }

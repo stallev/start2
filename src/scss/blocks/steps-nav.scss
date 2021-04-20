@@ -17,8 +17,8 @@
       position: absolute;
       display: block;
       content: '\f105';
-      right: -28px;
-      top: 50%;
+      right: -18px;
+      top: 55%;
       transform: translate(0, -100%);
       width: 10px;
       height: 10px;
@@ -39,6 +39,15 @@
     @include colorOnHover;
     &--active{
       color: #26b;
+    }
+  }
+}
+@media only screen and (min-width: 450px){
+  .steps-nav{
+    &__item{
+      &::after{
+        right: -28px;
+      }
     }
   }
 }
@@ -67,6 +76,7 @@
     &__item{
       &::after{
         font-size: 2rem;
+        top: 50%;
       }
     }
     &__link{

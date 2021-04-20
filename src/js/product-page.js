@@ -222,9 +222,11 @@ if(quickviewCloseBtn){
 // $('#zoom3').elevateZoom();
 // $('#zoom4').elevateZoom();
 // $('#zoom5').elevateZoom();
-if($('.zoom__img')){
-  $('.zoom__img').each(function(){
-    $(this).elevateZoom(
+if($('.product__main-slider-item')){
+  $('.product__main-slider-item').each(function(){
+    $(this).zoom({
+      magnify: 2
+    }
     );
   });
 }

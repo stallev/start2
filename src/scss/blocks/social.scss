@@ -61,6 +61,9 @@
 }
 .social__link--store{
   color: #fff;
+  &:hover{
+    color: #fff;
+  }
 }
 .social__link--store:hover{
   background-color: rgb(73, 138, 218);

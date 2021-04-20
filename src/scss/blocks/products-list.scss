@@ -83,12 +83,6 @@
     background-color: #26b;
   }
 }
-// .products-list--catalog .col-sm-4{
-//   width: 30%;
-// }
-// .products-list--catalog .col-6{
-//   width: 47%;
-// }
 
 .products-list{
   padding: 50px 0;
@@ -136,7 +130,7 @@
     display: none;
   }
   &__controls-select{
-    padding: 9px 9px 9px 7px;
+    padding: 9px 9px 9px 1px;
     border: 1px solid #e3e3e3;
     border-radius: 2px;
     color: inherit;

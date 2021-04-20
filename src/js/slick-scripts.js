@@ -13,6 +13,10 @@ if($('.promo-slider__wrap')){
     slidesToShow: 1,
     slidesToScroll: 1,               
     dots: true,
+    fade: true,
+    speed: 1000,
+    useTransform: true,
+    cssEase: 'ease-out',
     arrows:false,
     infinite: true,
     dotsClass: 'promo-slider__slick-dots'
@@ -250,7 +254,7 @@ if($('.blog-posts-similar-slider')){
     dots: true,
     arrows:false,
     infinite: true,
-    dotsClass: 'bestseller-slider__slick-dots',
+    dotsClass: 'blog-posts-similar-slider__slick-dots',
     responsive: [
       {
         breakpoint: 993,

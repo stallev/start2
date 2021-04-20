@@ -1,11 +1,10 @@
 .products-list--catalog-grid .product-card{
-  //box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  
 }
 .product-card{
   display: flex;
   flex-direction: column;
   padding: 5px;
-  //box-shadow: 6px 8px 8px 0px rgba(34, 60, 80, 0.2);
   &--aside-slider{
     flex-direction: row;
     align-items: center;
@@ -198,10 +197,7 @@
   visibility: visible;
   font-size: 1.1rem;
 }
-.products-list--catalog-grid .product-card{
-  flex: 0 0 49%;
-  max-width: 49%;
-}
+
 //строковый вид
 div.products-list--catalog-column .product-card{
   display: flex;
@@ -220,7 +216,7 @@ div.products-list--catalog-column .product-card{
     margin-bottom: 0;
   }
   &__price{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
   &__add-to-cart--top{
@@ -273,10 +269,11 @@ div.products-list--catalog-column .product-card{
     top: 0;
     text-align: center;
     width: fit-content;
-    font-size: 2.7rem;
+    font-size: 1.7rem;
+    line-height: 2;
     color: #222;
     background-color: #ccc;
-    padding: 2px 7px;
+    padding: 2px 10px;
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease-in;
@@ -347,10 +344,7 @@ div.products-list--catalog-column .product-card{
   }
 }
 @media only screen and (min-width: 769px){
-  .products-list--catalog-grid .product-card{
-    flex: 0 0 31.5%;
-    max-width: 31.5%;
-  }
+  
   .products-list--catalog-column .product-card{
     flex-direction: row;
     &__img-wrap {

@@ -1,9 +1,9 @@
 .mail-us{
   &__title{
     margin-bottom: 10px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 3.3rem;
+    line-height: 2rem;
     text-transform: uppercase;
     color: #222;
   }
@@ -17,15 +17,15 @@
   }
   &__contacts-item-title{
     margin-bottom: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    line-height: 2.6rem;
+    line-height: 1.4rem;
     text-transform: uppercase;
     color: #222;
   }
   &__contacts-item-content{
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2.6rem;
     cursor: pointer;
     @include colorOnHover;

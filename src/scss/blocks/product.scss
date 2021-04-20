@@ -225,6 +225,9 @@
       content: '\f104';
     }
   }
+  &__item{
+    overflow: hidden;
+  }
   & .slick-next{
     right: 15%;
     &::before{
