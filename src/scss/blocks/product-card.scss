@@ -309,12 +309,12 @@ div.products-list--catalog-column .product-card{
       font-size: 1.1rem;
     }
   }
-  .product-card--new .product-card__new-mark,
-  .product-card--new .product-card__sale-mark{
-    font-size: 1.1rem;
-  }
 }
 @media only screen and (min-width: 575px){
+  .product-card--new .product-card__new-mark,
+  .product-card--sale .product-card__sale-mark{
+    font-size: 1.1rem;
+  }
   .product-card{
     &__marks{
       padding: 12px 12px 0 12px;

@@ -3,6 +3,7 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 300px;
     //box-shadow: inset 13vw 28vh 22vw 6vh rgba(0,0,0,.3);
     box-shadow: inset 50vw 50vh 50vw 50vh rgba(0,0,0,.5);
@@ -16,7 +17,7 @@
   &__item-title{
     margin-bottom: 2.3vw;
     text-align: left;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     font-weight: 700;
     max-width: 50vw;
     color: #fff;
@@ -32,12 +33,12 @@
   }
   &__item-descr{
     margin-bottom: 3.7vw;
-    font-size: 2.4vw;
+    font-size: 3.4vw;
     line-height: 1.2;
     color: rgb(3, 1, 0);
     max-width: 71vw;
     font-weight: 700;
-    color: #ff0000;
+    color: #fff;
     // &--1{
     //   color: #fff;
     // }
@@ -54,8 +55,9 @@
     justify-content: center;
     margin: 0 auto;
     font-size: 0;
-    transform: translate(0,-50%);
+    transform: translate(-50%,0);
     left: 50%;
+    margin-right: -50%;
     bottom: 5vh;
     & button{
       display: block;
@@ -73,6 +75,7 @@
     padding: 1.3vw 2.2vw;
     border-radius: 3px;
     font-size: 1.6vw;
+    font-weight: 400;
     background-color: #26b;
     color: #fff;
     transition: background-color .4s ease-in-out;
@@ -84,6 +87,7 @@
 .promo-slider__wrap .slick-track{
   display: flex;
 }
+.promo-slider__slick-dots{}
 .promo-slider__slick-dots .slick-active button{
   background-color: #fff;
 }
@@ -95,11 +99,11 @@
     &__item-title{
       //max-width: 70vw;
       // margin-bottom: 20px;
-      // font-size: 3.4rem;
+      font-size: 3.3vw;
     }
     &__item-descr{
       bottom: 30px;
-      //font-size: 2.4rem;
+      font-size: 2.4vw;
     }
     & .action--promoslide{
       //font-size: 2rem;
@@ -112,8 +116,8 @@
       height: 500px;
     }
     &__item-title{
-      font-size: 2.7rem;
-      max-width: 400px;
+      font-size: 3.7rem;
+      max-width: 650px;
       margin-bottom: 17px;
     }
     &__item-descr{
@@ -123,7 +127,7 @@
     }
     & .action--promoslide{
       padding: 10px 25px;
-      font-size: 2.3rem;
+      font-size: 1.8rem;
     }
   }
 }
