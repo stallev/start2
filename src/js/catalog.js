@@ -37,6 +37,7 @@ if(filtrsTogggleBtns&&leftCatalogSidebar){
 if(catalogSidebarOverlay){
   catalogSidebarOverlay.addEventListener('click',  function (e) {
     document.querySelector('body').classList.toggle('sidebar-active');
+    returnSidebarBtn.style.display = 'inline-block';
   });
 }
 //изменяем чекбоксы в фильтре

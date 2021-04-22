@@ -49,6 +49,7 @@ const iconMenu = document.querySelector('.header__menu-icon-wrap');
 const mobileNavBlock = document.querySelector('.header__nav-block');
 const menuBody = document.querySelector('.nav');
 const closeIcon = document.querySelector('.mobile-nav__icon-close-wrap');
+const navOverlay = document.querySelector('.mobile-nav-overlay');
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.add('_lock');
@@ -56,6 +57,11 @@ if (iconMenu) {
 }
 if (closeIcon) {
 	closeIcon.addEventListener("click", function (e) {
+		document.body.classList.remove('_lock');
+	});
+}
+if(navOverlay){
+	navOverlay.addEventListener("click", function (e) {
 		document.body.classList.remove('_lock');
 	});
 }

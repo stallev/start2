@@ -6,6 +6,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  padding-right: 60px;
   z-index: 10000;
   height: 100%;
   visibility: hidden;
@@ -26,14 +27,17 @@
   height: 100%;
   overflow-y: auto;
   background: #222529;
-  width: 290px;
+  width: calc(100vw - 45px);
+  max-width: 290px;
   transition: transform .4s ease-in-out;
-  transform: translateX(-290px);
+  transform: translateX(-100%);
 }
 .mobile-nav__icon-close-wrap{
   position: fixed;
   top: 15px;
-  left: calc(100vw + 3px);
+  width: 30px;
+  height: 30px;
+  left: calc(100vw - 5px);
   cursor: pointer;
 }
 .catalog-sidebar__icon-close,
@@ -133,7 +137,7 @@
   }
   &__sub1-list{
     top: 50px;
-    padding-left: 30px;
+    padding-left: 15px;
     background-color: transparent;
     width: max-content;
     &::before{
@@ -165,3 +169,4 @@
 ._lock .mobile-nav{
   transform: translateX(0);
 }
+@media only screen and (min-width: 300px){}

@@ -1,7 +1,12 @@
 .logo{
-  max-width: 200px;
+  max-width: 130px;
 }
 .logo--footer{
   display: block;
   width: 163px;
+}
+@media only screen and (min-width: 360px){
+  .logo{
+    max-width: 200px;
+  }
 }

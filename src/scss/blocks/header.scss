@@ -130,7 +130,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding: 20px 0 20px 15px;
+		padding: 20px 0 20px 0;
 		font-size: 1.2rem;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -263,6 +263,9 @@
 				font-weight: 700;
 				font-size: 1.2rem;
 			}
+		}
+		&__cart-dropdown-header{
+			padding-left: 15px;
 		}
 		&__cart-dropdown-name,
 		&__cart-dropdown-price{

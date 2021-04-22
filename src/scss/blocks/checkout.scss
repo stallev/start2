@@ -220,6 +220,12 @@
      padding-top: 0;
      border-bottom: none;
    }
+   &__item-chk-field{
+    margin-bottom: 15px;
+   }
+   &__item-chk-field:last-of-type{
+    margin-bottom: 0;
+   }
    &__item-chk-field input{
     display: none;
   }
@@ -257,7 +263,7 @@
     width: fit-content;
     padding-left: 30px;
     font-size: 1.4rem;
-    line-height: 2.58;
+    //line-height: 2.58;
   }
   //конец стилям checkbox
 
