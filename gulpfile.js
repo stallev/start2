@@ -39,7 +39,6 @@ function styles() {
     .pipe(postcss([
       autoprefixer({browsers: ['last 2 version']}),
     ]))
-    .pipe(cleanCSS())
     .pipe(rename({ suffix: ".min" }))
     .pipe(sourcemaps.write('/'))
     .pipe(gulp.dest(paths.build + 'css/'));

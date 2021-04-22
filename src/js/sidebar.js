@@ -24,7 +24,6 @@ if(displaySidebarBtn&&rightSidebar&&closeSidebarBtn){
 if(closeSidebarBtn&&rightSidebar){
   closeSidebarBtn.addEventListener('click', function(e){
     e.preventDefault();
-    console.log(closeSidebarBtn);
     if(document.documentElement.clientWidth<993){
       document.querySelector('body').classList.remove('sidebar-active');
     }

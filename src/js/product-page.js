@@ -192,7 +192,7 @@ if(countBox){
 //быстрый просмотр
 let quickviewBtns = document.querySelectorAll('.product-card__quick-view');
 let quickviewCloseBtn = document.querySelector('.product-quickview__icon-close-wrap');
-
+let productQuickviewOverlay = document.querySelector('.product-quickview__overlay');
 if(quickviewBtns){
   quickviewBtns.forEach(
     btn => {
@@ -205,6 +205,11 @@ if(quickviewBtns){
 }
 if(quickviewCloseBtn){
   quickviewCloseBtn.addEventListener('click', function(){
+    document.body.classList.remove('quickview');
+  });
+}
+if(productQuickviewOverlay){
+  productQuickviewOverlay.addEventListener('click', function(){
     document.body.classList.remove('quickview');
   });
 }

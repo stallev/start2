@@ -158,7 +158,6 @@ if(blogItemExcerpt){
   );
 }
 if(excerptAsideCatalogCartTitle){
-  console.log(excerptAsideCatalogCartTitle);
   excerptAsideCatalogCartTitle.forEach(
     item => {
       item.innerHTML = getExcerpt( item.innerHTML, 60 ).shortText;
